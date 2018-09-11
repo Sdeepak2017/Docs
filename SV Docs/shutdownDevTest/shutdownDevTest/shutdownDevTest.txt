@@ -1,0 +1,10 @@
+#!/bin/sh
+export LISA_HOME="/home/causer/CA/DevTest"
+$LISA_HOME/bin/EnterpriseDashboardService stop
+$LISA_HOME/bin/PortalService stop
+$LISA_HOME/bin/RegistryService stop
+$LISA_HOME/bin/VirtualServiceEnvironmentService stop
+$LISA_HOME/bin/BrokerService stop
+
+$LISA_HOME/bin/CoordinatorService stop
+$LISA_HOME/bin/SimulatorService stop

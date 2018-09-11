@@ -1,0 +1,25 @@
+To start server components as services:
+
+Enter the following commands:
+
+EnterpriseDashboardService start
+RegistryService start
+PortalService start
+BrokerService start
+CoordinatorService start
+SimulatorService start
+VirtualServiceEnvironmentService start
+
+
+To stop server components as services:
+
+Enter the following commands:
+
+SimulatorService stop
+CoordinatorService stop
+VirtualServiceEnvironmentService stop 
+BrokerService stop
+PortalService stop
+RegistryService stop
+EnterpriseDashboardService stop
+
