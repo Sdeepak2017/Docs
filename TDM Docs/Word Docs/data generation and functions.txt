@@ -1,0 +1,19 @@
+@seqlov(0,@sqllist(S,SELECT id FROM data_present WHERE ID NOT IN(select ID from data_fetch))@)@
+
+This will fetch the new rows from the table and will not repeat the existing values 
+
+@seqlov(0,@sqllist(S,SELECT EDUCATION_LEVEL_KEY from EDUCATION_LEVEL)@)@
+
+
+
+----------------------------
+@seqlov(0,@sqllist(S,select JOIN_DATE from AUTHORIZED_USER)@)@ - effective start date for AUTHORIZED_USER_ADDRESS
+----------------------------------------------
+
+@seqlov(0,@sqllist(S,select AUTHORIZED_USER_KEY from AUTHORIZED_USER)@)@
+
+------------------------------------------------
+
+@seqlov(0,@sqllist(S,select JOIN_DATE from AUTHORIZED_USER)@)@
+
+--------------------------------------------------------------------

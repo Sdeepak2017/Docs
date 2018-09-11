@@ -1,0 +1,5 @@
+@if(@execsql(Ptravel,select salary from data_fetch where salary ='10000')@, @execsql(Ptravel,select name from data_fetch where salary='10000')@,@execsql(Ptravel,select name from data_fetch where salary='10000' )@)@
+
+
+
+@case(@execsql(Ptravel,select salary from data_fetch where salary='10000')@,@execsql(Ptravel,select name from data_fetch where salary='10000')@,@execsql(Ptravel,select salary from data_fetch where salary=''60000)@,@execsqlcount(Ptravel,select name from data_fetch where salary='50000')@,,@execsql(Ptravel,select name from data_fetch where salary='10000')@,@execsql(Ptravel,select salary from data_fetch where salary=''60000)@,@execsqlcount(Ptravel,select name from data_fetch where salary='60000')@,@execsqlcount(Ptravel,select name from data_fetch where salary='80000')@)@

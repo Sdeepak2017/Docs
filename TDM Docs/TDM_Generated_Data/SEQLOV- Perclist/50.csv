@@ -1,0 +1,51 @@
+﻿"CustomerID","FirstName","LastName","Department","Phone","Street",CITY,STATE,ZIPCODE
+1,Terrell,Telle,DEV,16007601212,Wellington road,Hubli,MH,63368
+2,Rosselyn,Victorine,DEV,17067504322,Crepestre mill,shrirampur,WY,25317
+3,Sarina,Fournet,DEV,19392067536,Beechwood road,Amravati,NY,17257
+4,Joan,Beaufort,DEV,13512034051,Springwood avenue,Kanauj,NV,93551
+5,Damini,Samuel,DEV,17086864790,Frewin Court,Davanagere,UT,15340
+6,Alana,Rondeau,DEV,17704872564,Blackburn place,Sheopur,IA,17354
+7,Popo,Livernois,DEV,17111806402,Prescot road,Jabalpur,UT,59717
+8,Magana,Beaudoin,DEV,17153539265,Beaufort street,Gandhinagar,FL,12025
+9,Kishore,Chalifour,DEV,13145703137,Shakespeare,Baharampur,KS,37709
+10,Amol,Maggi,DEV,16276824351,New bird street,Jalalabad,NE,35074
+11,Salarjung,Salon,DEV,18317031461,Cazneau street,Arrah,RI,46381
+12,Evert,Surette,DEV,18107746298,Greenland street,Damoh,PA,72173
+13,Zaria,Champagne,DEV,17004523844,Mount vernon street,Raigarh,CO,39866
+14,Kiango,Chene,DEV,13186954371,Gildart street,Kancheepuram,CT,27320
+15,Jaquelin,Germond,DEV,1552802702,Low hill,Coonoor,NH,99565
+16,Indrayani,Gereau,DEV,18648001535,Albert parade,Konark,AL,02877
+17,Chasity,Lucian,DEV,16159277698,Cunliffe street,Dewas,FM,00670
+18,Mu,Geoffrion,DEV,19194726326,Rodney street,Bharatpur,IL,77251
+19,Filip,Loree,DEV,12081224560,Oil street,Neemuch,IN,91604
+20,Acel,Savant,DEV,17313904828,Oakland road,Dhulian,CO,11765
+21,Deucalion,Lefebvre,DEV,14068996477,Kennett Road,Mokama,WV,74354
+22,Brendon,Calle,DEV,17066644904,Mason street,Kalwa,WA,00784
+23,Laboni,Aide,DEV,14068996477,Commutation row,Lamka,MO,76016
+24,Yesenia,Perret,DEV,17633642482,Hatton garden,Gundlupet,SC,15697
+25,Channon,Partee,DEV,17015498048,High st,Haldwani,WV,36091
+26,Adeyemi,Fouche,DEV,16896468343,Deane street,Contai,AL,17702
+27,Niket,Chatelain,DEV,12292613985,Black horse lane,Junagadh,MD,64445
+28,Nellie,Forget,DEV,13522572065,School lane,Sanawad,VT,46942
+29,Oidhche,Charron,DEV,12677552973,Mile end,Khilchipur,MD,07961
+30,Eupeithes,Cave,DEV,13011199810,Victoria street,Lucknow,TX,54156
+31,Harcourt,Santer,DEV,13135201572,Pembroke Street,Greater Noida,MH,80101
+32,Monima,Lejeune,DEV,13523764318,Manesty lane,Udaipur,MA,70704
+33,Mettabel,Germain,DEV,15853892039,Pier head,Anuppur,AR,17584
+34,Yvonne,Flammang,DEV,17075457018,Blake street,Haldia,RI,01102
+35,Margaret,Noland,DEV,13039977580,Carlton street,Srikakulam,OR,12872
+36,Madhuchanda,Cariveau,DEV,14694059749,Lodge lane,Chamoli Gopeshwar,MP,28456
+37,Bhanudas,Tron,DEV,19095198050,St ruel street,Kharagpur,NJ,79960
+38,Rois,Vallette,DEV,12294622854,Carver street,Etah,NE,08533
+39,Adin,Yon,DEV,18475376683,The vineries,Thoothukudi,IN,29518
+40,Beli,Caire,DEV,13404953842,Bowring park avenue,Vasai,MO,77662
+41,Shravankumar,Fradette,TESTING,12291593723,Crowell Road,Ajmer,NV,38552
+42,Johnna,Moulin,TESTING,17036101301,Leece street,Gondiya,DE,81137
+43,Hailee,Lemay,TESTING,12048204757,Hockenhall alley,Tirupathi,NY,12901
+44,Lanzo,Gerald,TESTING,15644372105,Brooklands road,Kozhencherry,TN,91025
+45,Stacia,Perine,TESTING,16698741174,Dungeon lane,Panna,AL,83253
+46,Gavi,Montminy,TESTING,17372632444,Harthill  avenue,Bihar Sharif,AK,70512
+47,Rashad,Saber,TESTING,18317712405,St johns lane,Suratgarh,NM,60038
+48,Yaffa,Gaudreault,TESTING,14068544303,Wode street,Raisen,CO,60674
+49,Keanan,Cart,TESTING,15616623579,Royal mail street,Punalur,ME,02184
+50,Zehave,Vincent,TESTING,17038898237,Mann island,Kangazha,PA,88424

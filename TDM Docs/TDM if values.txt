@@ -1,0 +1,23 @@
+@execsql(Ptravel,select email from xmltest)@
+
+@if(boolean,trueexpr,falseexpr)@
+
+
+-------------
+
+@randlov(0,@seedlist(FirstName)@)@
+@seqlov(0,@occlist(10%1,5%0)@)@
+@if(^email^,0,t,f)@
+
+
+@seqlov(0,@sqllist(Ptravel,select name from xmltest)@)@
+
+
+
+@seqlov(0,@perclist(50%@seqlov(0,@sqllist(Ptravel,select name from xmltest)@)@,50%@seqlov(0,@sqllist(Ptravel,select name from xmltest)@)@)@)@
+
+
+@if(^type^=TCS,india,england)@
+
+
+@case(^type^=A,INDIA,^type^=B,ENGLAND,^type^=C,AUSTRLIA)@

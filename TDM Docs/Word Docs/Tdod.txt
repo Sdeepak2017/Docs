@@ -1,0 +1,15 @@
+    Tester Self-Service using TDoD
+
+As a tester, you use the Test Data on Demand (TDoD) UI to request, reserve, and obtain test data for your test cases. The Test Data Engineer (TDE) publishes the necessary data to TDoD as configurable flows. You can see different flows designed for different purposes based on your user privileges. Identify the right flow that meets your requirements and then execute it to request the data you need. If you do not see a flow that fits your test data requirements, contact your administrator or test data engineer to get the needed flow.
+
+Follow these steps:
+
+1. Enter the Test Data on Demand (TDoD) URL in a web browser that has the Microsoft Silverlight plugin installed.
+Note: Obtain the URL from your test data engineer or administrator.
+2. Enter valid log in credentials.
+3. The TDoD UI displays the available Flows that you have permission to see.
+4. Click the Flow that fits your test data requirements.
+5. Depending on the complexity of the test data and the request, the Flow might contain dozens of configurable fields or only a couple.
+6. Complete all fields on the Flow according the your specifications and click Submit.
+7. The request is processed, and added to the jobs list. Click the Job Enquiry tile on the TDoD home page to view the job status.
+8. When your data is available, you receive a notification through email.

@@ -1,0 +1,271 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.10586}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\f0\fs22\lang9     \par
+\par
+\ul\b\fs32 Generate Synthetic Test Data\par
+\ulnone\fs22 Synthetic test data \b0 is \b data\b0  that contains all the characteristics of production, but with none of the sensitive content. \b CA TDM \b0 uses \b data profiling techniques \b0 to take an accurate picture of your data model. CA TDM uses this information to \b generate smaller\b0 , \b richer\b0 , more \b sophisticated\b0  sets of \b test data\b0 .\par
+
+\pard\sa200\sl276\slmult1\par
+\b ADVANTAGES OF SYNTHETIC TEST DATA:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0 Eliminate the risk of \b data breach \b0 by creating \b production-like \b0 data without sensitive content.\par
+{\pntext\f0 2.\tab}Create large volumes of data for \b performance and load tests.\par
+{\pntext\f0 3.\tab}\b0 Improve the \b efficiency \b0 of your testing.\par
+{\pntext\f0 4.\tab}\b Reduce infrastructure \b0 by covering all combinations in the \b optimal minimum set of test data.\par
+
+\pard\sa200\sl276\slmult1\par
+Generate Synthetic Data Using Datamaker and Generate Data which has all the characteristics of PRODUCTION, but with more SENSITVE CONTENT\par
+
+\pard\sa200\sl276\slmult1\qc\b0\par
+\ul\b\fs32 Test Matching\fs22\par
+
+\pard\sa200\sl276\slmult1\ulnone\b0 In a \b software product development environment\b0 , testers use \b product requirements \b0 to create their own \b test cases\b0 , which concentrate on a \b requirement\rquote s outcomes\b0 . Test cases \b probe\b0  each way a user \b may interact \b0 with a \b feature\b0  in a \b software application\b0 .\par
+\par
+After creating the necessary test cases, testers essentially need the test data which is typically spread across multiple databases\par
+\b Manually creating test data \b0 is not a viable option and rarely results in data that has \b sufficient test coverage, leading to bugs in production.\par
+Test Case Match \b0 uses powerful data mining functionality within Datamaker to quickly\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 idnetify\par
+{\pntext\f2\'B7\tab}mine\par
+{\pntext\f2\'B7\tab}Link \b DATA\b0\par
+
+\pard\sa200\sl276\slmult1  to \b Automated test cases \b0 from \b multiple sources\b0 .\par
+\b Test Matching \b0 helps you to \b link the test case \b0 with the \b actual test data.\par
+Note: Test matching supports only Microsoft SQL Server and Oracle databases\par
+\b0\par
+\b Procedure to MATCH your test cases with the RIGHT data:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0 Construct Test Data Mart\par
+{\pntext\f0 2.\tab}Create Project in Datamaker\par
+{\pntext\f0 3.\tab}Edit Test Case Data Criteria\par
+{\pntext\f0 4.\tab}Run Test Match\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs28\par
+
+\pard\sa200\sl276\slmult1\ul\fs24 1. Construct Test Data Mart\fs28\par
+
+\pard\sa200\sl276\slmult1\ulnone\b0\fs22 The \b Test Data Mart \b0 is a \b collection\b0  of summary tables \b built up from the core attributes \b0 identified in your test criteria.\b\par
+\b0 Construct a \b Test Mart \b0 within a \b database\b0  and register with \b Datamaker\b0  using a connection profile.\par
+\par
+Check  the following points when defining Test Data Mart columns:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Test Data Mart column names should not match with the SQL keywords.\par
+{\pntext\f2\'B7\tab}Do not use spaces in the column names.\par
+{\pntext\f2\'B7\tab}Ensure that the Test Data Mart columns are defined with appropriate data types including the required maximum length, [\b example: nvarchar(max) \b0 ].\b\par
+
+\pard\sa200\sl276\slmult1\fs24\par
+
+\pard\sa200\sl276\slmult1\ul 2. Create Project in Datamaker\par
+Steps \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\fs22 Launch Datamaker and connect to the Profile which is mapped with the Test Data Repository.\par
+{\pntext\f2\'B7\tab}Provide login credentials in the logon dialog and click the Connect to user button.\par
+{\pntext\f2\'B7\tab}Select the required Data Target and click the Connect to Databases and Startup button.\par
+{\pntext\f2\'B7\tab}Go to Projects menu and click Project Manager.\par
+{\pntext\f2\'B7\tab}Right click the Projects and click New Project and Version.\par
+{\pntext\f2\'B7\tab}Specify the following in the Create New Project dialog and click the Save Details \b\par
+
+\pard\sa200\sl276\slmult1                        Project Name,Project Description,Version,Version Description,Generic\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Click OK on Project Settings and New Project dialogs.\par
+
+\pard\sa200\sl276\slmult1\par
+\b\tab Register Test Data Mart\ul\b0\par
+
+\pard\li720\sa200\sl276\slmult1\ulnone You must register the data definitions to Datamaker to manage the data.\par
+ You can register the data definition just once per version.\par
+ Thereafter, you can re-register \b only\b0  the \b table or data definition\b0 , if you edit them.\par
+\ul\b Create a Test Match Data Pool\par
+\ulnone\b0 A data pool is a centralized data object, where the necessary information to perform business transactions is stored in a standardized way.\par
+
+\pard\li720\outl\lang16393 For performing test match, you can create the data pool of Test Match type.\par
+
+\pard\par
+
+\pard\li720\b Follow these steps:\cf1\b0  \par
+
+\pard\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\cf0\outl0  Expand the newly created project from the Projects tree view and locate the Version folder.\par
+{\pntext\f2\'B7\tab}Right click on the Version folder, and click New Data Group.\par
+{\pntext\f2\'B7\tab}Specify the following in the New Data Group dialog and click Save Details:\b\par
+
+\pard\sa200\sl276\slmult1\qc                    Name,Description,On Demand?,\par
+TYPE :Normal/GTSubsets/CA Agile Requirements Designer\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b0 Click OK in the confirmation dialog.\par
+{\pntext\f2\'B7\tab}Right click on the Data Group you created, and then click New Data Set.\b\fs24\lang9\par
+{\pntext\f2\'B7\tab}\b0\fs22\lang16393 Specify the required details in the New Data Set window and click Save Details icon. Following are the additional fields to specify in this step:\b\lang9 Make Test Data available for external use . Specifies whether the Test Data can be made available for external use.\fs24\par
+{\pntext\f2\'B7\tab}\b0\fs22 Click OK in the confirmation dialog.\par
+{\pntext\f2\'B7\tab}Right click on the Data Set you created, and then click New Data Pool.\par
+{\pntext\f2\'B7\tab}Specify the following in the New Data Pool window and click Save Details icon. Following are the additional fields to specify in this step:\fs20\par
+
+\pard\sa200\sl276\slmult1                 \tab  \b Type\b0\par
+
+\pard\li2160\sa200\sl276\slmult1 Specifies the type of Data Pool. Select Test Match from the dropdown list. Following are the available options:\par
+
+\pard\li1440\sa200\sl276\slmult1\b Data Only\par
+Normal\par
+Test Match\par
+GTSubsets\par
+CA Agile Requirements Designer\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1\b0\fs22 Go to the Test Matching tab and do the following:\par
+
+\pard\li1440\sa200\sl276\slmult1\tab\fs20 1) Click the Tables and Columns tab and specify the following:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li2520\sa200\sl276\slmult1 Profile Name\par
+{\pntext\f2\'B7\tab}Table Owner\par
+{\pntext\f2\'B7\tab}Match data in table\par
+{\pntext\f2\'B7\tab}Report match in column\par
+{\pntext\f2\'B7\tab}Report user in column\par
+{\pntext\f2\'B7\tab}Report locking in column\par
+{\pntext\f2\'B7\tab}Expected Results in column\par
+{\pntext\f2\'B7\tab}Report Job ID in column\par
+{\pntext\f2\'B7\tab}Default Summary Table Publish\par
+
+\pard\li2160\sa200\sl276\slmult1 2)Click the Key Columns tab and specify the following:\par
+
+\pard\li3600\sa200\sl276\slmult1\b Report Key Columns\par
+\b0 Set of columns that are uniquely identifiable. Locks one record, and blocks all the duplicate records found with same values in reporting key columns.\par
+\b Primary Key Columns\par
+\b0 These are the surrogate key columns. The clauses of the query are formed based on this column.\par
+\b Data Attribute Columns\par
+\b0 These are the reporting columns. This identifies the attribute columns to show in the reports.\tab\par
+
+\pard\li1440\sa200\sl276\slmult1\fs22\par
+\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs24\par
+\ul 3. Edit Test Case Data Criteria\b0\fs22\par
+
+\pard\sa200\sl276\slmult1\ulnone Test Case Data Criteria (TCDC) is a logical table stored inside the Datamaker repository (static data pool) containing one row per test case.\par
+Each row defines one or more query criteria that define the test case's data requirements for a given test data entity.\par
+Also specifies whether the test case updates the underlying data for that instance, or whether it only reads it\par
+\b Follow these steps:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs20 Expand the project in which you created the Data Pool with type as Test Match.\par
+{\pntext\f2\'B7\tab}Double click the Data Pool, and click Edit Data.\par
+{\pntext\f2\'B7\tab}Expand the Registered Objects tree view, locate Used Tables, and click TESTCASE_DATA_CRITERIA.\par
+{\pntext\f2\'B7\tab}Add as many test cases as you want to match with the test data. Add a separate row for each test case.\par
+{\pntext\f2\'B7\tab}Go to each test case row and click on each column to provide the test case data criteria for the respective test case. Optionally double click on each column to open the editor window. Enter the values in the editor window for respective column and click validate. Verify that the value you entered is valid and then click Save.\par
+
+\pard\sa200\sl276\slmult1\tab\tab Following are the mandatory columns for each test case: \par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b Test Repeater\b0\par
+
+\pard\sa200\sl276\slmult1\tab\tab Specifies the amount of test data you want to have for the given test condition.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b Test Conditions\par
+
+\pard\li1440\sa200\sl276\slmult1\tab\b0 Specifies the test conditions to apply on the primary key columns in the \tab testmart properties. The conditions you enter in these columns form the \tab WHERE clause for matching the data. The TCDC table has 20 columns for \tab specifying the test conditions.\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li2880\sa200\sl276\slmult1 The test conditions you enter in these columns result in "AND" conditions. For example, if you enter \ldblquote salary < 1000\rdblquote  in \ldblquote Test Conditions\rdblquote  column and \ldblquote age > 30\rdblquote  in \ldblquote Test Conditions2\rdblquote  column, then the final test condition becomes "where salary < 1000 AND age > 30\rdblquote .\par
+{\pntext\f0 2.\tab}If you want to specify "OR" conditions among testmart columns, then enter your complete test condition only in the "TEST CONDITIONS" column. Do not use multiple test conditions columns.\par
+{\pntext\f0 3.\tab}Do the following to enter or edit the values in each test conditions column:\par
+{\pntext\f0 4.\tab}Double-click on the Test Conditions column.\par
+{\pntext\f0 5.\tab}The editor window opens.\par
+{\pntext\f0 6.\tab}Enter the test condition in the text box on the editor window.\par
+{\pntext\f0 7.\tab}Click the Validate WHERE clause in Test Match Pool button to verify whether the test condition you entered is valid or not.\par
+{\pntext\f0 8.\tab}Click the Count number of occurrences button to see the matched row count for the test condition you entered.\par
+{\pntext\f0 9.\tab}Click Save.\par
+{\pntext\f0 10.\tab}The values you entered are saved in the respective test conditions column for the corresponding test case.\par
+
+\pard\sa200\sl276\slmult1\b\tab\tab Test Override Priority\b0\par
+\tab\tab Default: 99\par
+
+\pard\li1440\sa200\sl276\slmult1 Range: 1 \f1\endash  99.\par
+1 sets the highest priority and 99 sets the lowest priority.\par
+
+\pard\sa200\sl276\slmult1\par
+\b\f0\lang16393\tab\tab\f1\lang9 Test Locking\par
+\f0\lang16393\tab\tab\b0 Default: LK\par
+\tab\tab Available options: LK and RS\par
+\tab\tab\tab LK: Specifies Exclusive Lock. Rows that have LK (Exclusive Lock) for a test case \tab\tab\tab\tab cannot be allocated to another test case, even if they meet all the other \tab\tab\tab\tab criteria.\par
+\tab\tab\tab RS: Specifies Read Share. Rows that have RS (Read Shared Lock) can be \tab\tab\tab\tab additionally allocated to other test cases that only require read shared locks, \tab\tab\tab\tab but not to test cases requiring an exclusive lock.\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Click the Save icon.\fs22\par
+
+\pard\sa200\sl276\slmult1\fs20\par
+\ul\b\fs24 4. Run Test Match\par
+\ulnone\tab\b0\fs22 After having the test cases, test data criteria and the test data ready, now you can \tab match the test cases and get the right test data based on the specified criteria.\par
+
+\pard\li720\sa200\sl276\slmult1\b\fs20 Follow these steps:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1\b0 Right click the test match data pool in which you added the test case data criteria, and then click Test Match.\par
+{\pntext\f0 2.\tab}Test Match window opens consisting of the Table and Columns, Key Columns and Runtime Parameters tabs.\par
+{\pntext\f0 3.\tab}Go to the Runtime Parameters tab and specify the following:\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab Limit to a single Test\par
+\tab\tab Simulate Testmatch\par
+\tab\tab Allow Partial Matches\par
+\tab\tab Clear Existing Matches\par
+
+\pard\sa200\sl276\slmult1                 4.   Click Match.\par
+
+\pard\li720\sa200\sl276\slmult1  5.  In the Submit Test Match dialog specify the following and click the Go icon.\par
+
+\pard\sa200\sl276\slmult1\tab\tab\b Enterprise \b0\par
+\tab\tab\tab Runs the test match right away. This mode was called Immediate mode in \tab\tab\tab\tab previous releases\par
+\tab\tab\b Enterprise Remote\b0\par
+\tab\tab\tab Runs the test match as scheduled. Specify the schedule start date, time, email \tab\tab\tab\tab address, and thread in the respective fields. Follow the test data repository \tab\tab\tab\tab time zone. This mode was called Remote mode in previous releases.\par
+                  6.  After successfully completing the test match, the view reports dialog opens with the                                   \tab         following options:\par
+\tab\tab\b Yes\b0\par
+\tab\tab\tab Click to open the reports in the browser.\par
+\tab\tab\b No\b0\par
+\tab\tab\tab Click to exit. To access the reports go to %AppData%\\Grid-Tools\\Testmatch\\ \tab\tab\tab\tab using Run Command.\par
+\b\fs24   View Test Match Reports\par
+
+\pard\li720\sa200\sl276\slmult1\b0\fs20 After successfully running the test match, Datamaker provides you two types of reports.\par
+\tab\b Matched Key Report\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 This report shows matched keys of the test cases that have matching data found.\par
+
+\pard\li1440\sa200\sl276\slmult1\b Testmatch Summary Report\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 This report shows the summary of test matching for active test cases in Test Case Data Criteria table. \b\par
+
+\pard\li1080\sa200\sl276\slmult1\qc\fs32\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\ul Tester Self-Service using TDoD\b0\fs22\par
+
+\pard\sa200\sl276\slmult1\ulnone\par
+The Test Data on Demand (TDoD) UI is used to \b request\b0 , \b reserve\b0 , \b and obtain test data \b0 for your \b test cases\b0 .\par
+ The \b Test Data Engineer (TDE) \b0 publishes the necessary data to \b TDoD \b0 as configurable flows. \par
+
+\pard\li720\sa200\sl276\slmult1 You can see different flows designed for different purposes based on your user privileges. Identify the right flow that meets your requirements and then execute it to request the data you need. \par
+
+\pard\sa200\sl276\slmult1\b Follow these steps:\par
+
+\pard\li720\sa200\sl276\slmult1\b0 1. Enter the Test Data on Demand (TDoD) URL in a web browser that has the Microsoft Silverlight plugin installed.\par
+\b Note: Obtain the URL from your test data engineer or administrator.\par
+\b0 2. Enter valid log in credentials.\par
+
+\pard\li720\sa200\sl276\slmult1 3. The TDoD UI displays the available Flows that you have permission to see.\par
+4. Click the \b Flow\b0  that fits your \b test data requirements\b0 .\par
+5. Depending on the complexity of the test data and the request, the Flow might contain dozens of configurable fields or only a couple.\par
+6. Complete all fields on the Flow according the your specifications and click Submit.\par
+7. The request is processed, and added to the jobs list. Click the Job Enquiry tile on the TDoD home page to view the job status.\par
+8. When your data is available, you receive a notification through email.\par
+\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+}
+ 

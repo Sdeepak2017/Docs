@@ -1,0 +1,5 @@
+Customer:
+
+--> For "ORG_ISLEGAL_FLAG" field, we are generating blank for individual but in teh table it is showing as zero.
+--> Cross check GENDER key value
+--> CUSTOMER_STATUS_KEY: 
