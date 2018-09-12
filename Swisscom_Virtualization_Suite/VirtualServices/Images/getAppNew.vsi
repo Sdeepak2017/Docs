@@ -1,0 +1,470 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="169" name="getAppNew" created="2017-02-27.16:24:51.414" lastModified="2017-02-27.16:30:09.945" version="10.0.0" buildNumber="10.0.0.431">
+<st>
+<t id="164" nd="true">
+<sp>
+<t id="172">
+<rq id="173" op="multiplexAppointmentCalculate" tl="EXACT">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">1502152975191093523432126706134266935234</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">1-IDWBES</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">309700</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Liebefeld</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">40320081</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">2</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_firstInhouse" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_fibreLinebusinessState" t="arg:EQUALS;false;;;;">50</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_enforceSla" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2017-02-28T01:30:00+01:00</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">wfm</p>
+<p n="HTTP-Segment-Attr-1">services</p>
+<p n="HTTP-Segment-Attr-2">WfmAppBookingV002</p>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIj48U09BUC1FTlY6Qm9keT48bnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlIHhtbG5zOm5zMD0iYXBzLm1Mb2dpc3RpY3MuYXBwQm9va2luZy52MiI+PG5zMDpnZXRBcHBvaW50bWVudFRpbWVTbG90c0Z1Zj48bnMwOmdlSWQ+MTUwMjE1Mjk3NTE5MTA5MzUyMzQzMjEyNjcwNjEzNDI2NjkzNTIzNDwvbnMwOmdlSWQ+PG5zMDpzb3VyY2VBcHBsaWNhdGlvbklkPlNCTDwvbnMwOnNvdXJjZUFwcGxpY2F0aW9uSWQ+PG5zMDpzeW5jSWQ+MS1JRFdCRVM8L25zMDpzeW5jSWQ+PG5zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6emlwPjMwOTcwMDwvbnMwOnppcD48bnMwOmNpdHk+TGllYmVmZWxkPC9uczA6Y2l0eT48bnMwOmNvdW50cnk+Q0g8L25zMDpjb3VudHJ5PjxuczA6Z2FpYUlkPjQwMzIwMDgxPC9uczA6Z2FpYUlkPjwvbnMwOmN1c3RvbWVyTG9jYXRpb24+PG5zMDpmdWxmaWxsbWVudFN0cmF0ZWd5TGV2ZWw+MTwvbnMwOmZ1bGZpbGxtZW50U3RyYXRlZ3lMZXZlbD48bnMwOnNsb3RDbGFzcz4yMDwvbnMwOnNsb3RDbGFzcz48bnMwOnN6ZlF1YWxpZmljYXRpb24+MDwvbnMwOnN6ZlF1YWxpZmljYXRpb24+PG5zMDpmdWZTZXJ2aWNlSW5mbz48bnMwOmJ1c2luZXNzTGluZT4zMDwvbnMwOmJ1c2luZXNzTGluZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjExPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+MTA8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PC9uczA6ZnVmU2VydmljZUluZm8+PG5zMDpsb2NhbExvb3BUeXBlPjI8L25zMDpsb2NhbExvb3BUeXBlPjxuczA6ZmlicmVDaXJjdWl0U3RhdGU+PG5zMDpmaXJzdEluaG91c2U+ZmFsc2U8L25zMDpmaXJzdEluaG91c2U+PG5zMDpmaWJyZUxpbmVidXNpbmVzc1N0YXRlPjUwPC9uczA6ZmlicmVMaW5lYnVzaW5lc3NTdGF0ZT48bnMwOmVuZm9yY2VTbGE+ZmFsc2U8L25zMDplbmZvcmNlU2xhPjwvbnMwOmZpYnJlQ2lyY3VpdFN0YXRlPjxuczA6c3RhcnRQZXJpb2Q+MjAxNy0wMi0yOFQwMTozMDowMCswMTowMDwvbnMwOnN0YXJ0UGVyaW9kPjwvbnMwOmdldEFwcG9pbnRtZW50VGltZVNsb3RzRnVmPjwvbnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlPjwvU09BUC1FTlY6Qm9keT48L1NPQVAtRU5WOkVudmVsb3BlPg==</p>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;1502152975191093523432126706134266935234&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IDWBES&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;309700&lt;/ns0:zip&gt;&lt;ns0:city&gt;Liebefeld&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;40320081&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&lt;ns0:fibreCircuitState&gt;&lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&lt;/ns0:fibreCircuitState&gt;&lt;ns0:startPeriod&gt;2017-02-28T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/wfm/services/WfmAppBookingV002</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="content-type">text/xml; charset=&quot;utf-8&quot;</p>
+<p n="SoapAction">&quot;https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate&quot;</p>
+<p n="Authorization">Basic dGlidGVzdDp0aWJ0ZXN0</p>
+<p n="User-Agent">BW-HTTPClient/5.4</p>
+<p n="Host">localhost:9002</p>
+<p n="Content-Length">1345</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;1502152975191093523432126706134266935234&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IDWBES&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;309700&lt;/ns0:zip&gt;&lt;ns0:city&gt;Liebefeld&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;40320081&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&lt;ns0:fibreCircuitState&gt;&lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&lt;/ns0:fibreCircuitState&gt;&lt;ns0:startPeriod&gt;2017-02-28T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="174" t="5">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Content-Type">text/html; charset=US-ASCII</p>
+<p n="Content-Length">171</p>
+</m>
+<bd chs="US-ASCII">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /wfm/services/WfmAppBookingV002 was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="165">
+<rq id="175" op="multiplexAppointmentCalculate" tl="EXACT">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">1754292976246454253032126706134266942530</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">1-IDWBES</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">309700</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Liebefeld</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">40320081</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">2</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_firstInhouse" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_fibreLinebusinessState" t="arg:EQUALS;false;;;;">50</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_enforceSla" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2017-03-01T01:30:00+01:00</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">wfm</p>
+<p n="HTTP-Segment-Attr-1">services</p>
+<p n="HTTP-Segment-Attr-2">WfmAppBookingV002</p>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIj48U09BUC1FTlY6Qm9keT48bnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlIHhtbG5zOm5zMD0iYXBzLm1Mb2dpc3RpY3MuYXBwQm9va2luZy52MiI+PG5zMDpnZXRBcHBvaW50bWVudFRpbWVTbG90c0Z1Zj48bnMwOmdlSWQ+MTc1NDI5Mjk3NjI0NjQ1NDI1MzAzMjEyNjcwNjEzNDI2Njk0MjUzMDwvbnMwOmdlSWQ+PG5zMDpzb3VyY2VBcHBsaWNhdGlvbklkPlNCTDwvbnMwOnNvdXJjZUFwcGxpY2F0aW9uSWQ+PG5zMDpzeW5jSWQ+MS1JRFdCRVM8L25zMDpzeW5jSWQ+PG5zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6emlwPjMwOTcwMDwvbnMwOnppcD48bnMwOmNpdHk+TGllYmVmZWxkPC9uczA6Y2l0eT48bnMwOmNvdW50cnk+Q0g8L25zMDpjb3VudHJ5PjxuczA6Z2FpYUlkPjQwMzIwMDgxPC9uczA6Z2FpYUlkPjwvbnMwOmN1c3RvbWVyTG9jYXRpb24+PG5zMDpmdWxmaWxsbWVudFN0cmF0ZWd5TGV2ZWw+MTwvbnMwOmZ1bGZpbGxtZW50U3RyYXRlZ3lMZXZlbD48bnMwOnNsb3RDbGFzcz4yMDwvbnMwOnNsb3RDbGFzcz48bnMwOnN6ZlF1YWxpZmljYXRpb24+MDwvbnMwOnN6ZlF1YWxpZmljYXRpb24+PG5zMDpmdWZTZXJ2aWNlSW5mbz48bnMwOmJ1c2luZXNzTGluZT4zMDwvbnMwOmJ1c2luZXNzTGluZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjExPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+MTA8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PC9uczA6ZnVmU2VydmljZUluZm8+PG5zMDpsb2NhbExvb3BUeXBlPjI8L25zMDpsb2NhbExvb3BUeXBlPjxuczA6ZmlicmVDaXJjdWl0U3RhdGU+PG5zMDpmaXJzdEluaG91c2U+ZmFsc2U8L25zMDpmaXJzdEluaG91c2U+PG5zMDpmaWJyZUxpbmVidXNpbmVzc1N0YXRlPjUwPC9uczA6ZmlicmVMaW5lYnVzaW5lc3NTdGF0ZT48bnMwOmVuZm9yY2VTbGE+ZmFsc2U8L25zMDplbmZvcmNlU2xhPjwvbnMwOmZpYnJlQ2lyY3VpdFN0YXRlPjxuczA6c3RhcnRQZXJpb2Q+MjAxNy0wMy0wMVQwMTozMDowMCswMTowMDwvbnMwOnN0YXJ0UGVyaW9kPjwvbnMwOmdldEFwcG9pbnRtZW50VGltZVNsb3RzRnVmPjwvbnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlPjwvU09BUC1FTlY6Qm9keT48L1NPQVAtRU5WOkVudmVsb3BlPg==</p>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;1754292976246454253032126706134266942530&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IDWBES&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;309700&lt;/ns0:zip&gt;&lt;ns0:city&gt;Liebefeld&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;40320081&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&lt;ns0:fibreCircuitState&gt;&lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&lt;/ns0:fibreCircuitState&gt;&lt;ns0:startPeriod&gt;2017-03-01T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/wfm/services/WfmAppBookingV002</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="content-type">text/xml; charset=&quot;utf-8&quot;</p>
+<p n="SoapAction">&quot;https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate&quot;</p>
+<p n="Authorization">Basic dGlidGVzdDp0aWJ0ZXN0</p>
+<p n="User-Agent">BW-HTTPClient/5.4</p>
+<p n="Host">localhost:9002</p>
+<p n="Content-Length">1345</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;1754292976246454253032126706134266942530&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IDWBES&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;309700&lt;/ns0:zip&gt;&lt;ns0:city&gt;Liebefeld&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;40320081&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&lt;ns0:fibreCircuitState&gt;&lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&lt;/ns0:fibreCircuitState&gt;&lt;ns0:startPeriod&gt;2017-03-01T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="176" t="3">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Content-Type">text/html; charset=US-ASCII</p>
+<p n="Content-Length">171</p>
+</m>
+<bd chs="US-ASCII">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /wfm/services/WfmAppBookingV002 was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="177" op="multiplexAppointmentCalculate" tl="SIGNATURE">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">1502152975191093523432126706134266935234</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">1-IDWBES</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">309700</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Liebefeld</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">40320081</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">2</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_firstInhouse" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_fibreLinebusinessState" t="arg:EQUALS;false;;;;">50</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_enforceSla" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2017-02-28T01:30:00+01:00</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">wfm</p>
+<p n="HTTP-Segment-Attr-1">services</p>
+<p n="HTTP-Segment-Attr-2">WfmAppBookingV002</p>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIj48U09BUC1FTlY6Qm9keT48bnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlIHhtbG5zOm5zMD0iYXBzLm1Mb2dpc3RpY3MuYXBwQm9va2luZy52MiI+PG5zMDpnZXRBcHBvaW50bWVudFRpbWVTbG90c0Z1Zj48bnMwOmdlSWQ+MTUwMjE1Mjk3NTE5MTA5MzUyMzQzMjEyNjcwNjEzNDI2NjkzNTIzNDwvbnMwOmdlSWQ+PG5zMDpzb3VyY2VBcHBsaWNhdGlvbklkPlNCTDwvbnMwOnNvdXJjZUFwcGxpY2F0aW9uSWQ+PG5zMDpzeW5jSWQ+MS1JRFdCRVM8L25zMDpzeW5jSWQ+PG5zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6emlwPjMwOTcwMDwvbnMwOnppcD48bnMwOmNpdHk+TGllYmVmZWxkPC9uczA6Y2l0eT48bnMwOmNvdW50cnk+Q0g8L25zMDpjb3VudHJ5PjxuczA6Z2FpYUlkPjQwMzIwMDgxPC9uczA6Z2FpYUlkPjwvbnMwOmN1c3RvbWVyTG9jYXRpb24+PG5zMDpmdWxmaWxsbWVudFN0cmF0ZWd5TGV2ZWw+MTwvbnMwOmZ1bGZpbGxtZW50U3RyYXRlZ3lMZXZlbD48bnMwOnNsb3RDbGFzcz4yMDwvbnMwOnNsb3RDbGFzcz48bnMwOnN6ZlF1YWxpZmljYXRpb24+MDwvbnMwOnN6ZlF1YWxpZmljYXRpb24+PG5zMDpmdWZTZXJ2aWNlSW5mbz48bnMwOmJ1c2luZXNzTGluZT4zMDwvbnMwOmJ1c2luZXNzTGluZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjExPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+MTA8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PC9uczA6ZnVmU2VydmljZUluZm8+PG5zMDpsb2NhbExvb3BUeXBlPjI8L25zMDpsb2NhbExvb3BUeXBlPjxuczA6ZmlicmVDaXJjdWl0U3RhdGU+PG5zMDpmaXJzdEluaG91c2U+ZmFsc2U8L25zMDpmaXJzdEluaG91c2U+PG5zMDpmaWJyZUxpbmVidXNpbmVzc1N0YXRlPjUwPC9uczA6ZmlicmVMaW5lYnVzaW5lc3NTdGF0ZT48bnMwOmVuZm9yY2VTbGE+ZmFsc2U8L25zMDplbmZvcmNlU2xhPjwvbnMwOmZpYnJlQ2lyY3VpdFN0YXRlPjxuczA6c3RhcnRQZXJpb2Q+MjAxNy0wMi0yOFQwMTozMDowMCswMTowMDwvbnMwOnN0YXJ0UGVyaW9kPjwvbnMwOmdldEFwcG9pbnRtZW50VGltZVNsb3RzRnVmPjwvbnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlPjwvU09BUC1FTlY6Qm9keT48L1NPQVAtRU5WOkVudmVsb3BlPg==</p>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;1502152975191093523432126706134266935234&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IDWBES&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;309700&lt;/ns0:zip&gt;&lt;ns0:city&gt;Liebefeld&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;40320081&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&lt;ns0:fibreCircuitState&gt;&lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&lt;/ns0:fibreCircuitState&gt;&lt;ns0:startPeriod&gt;2017-02-28T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/wfm/services/WfmAppBookingV002</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="content-type">text/xml; charset=&quot;utf-8&quot;</p>
+<p n="SoapAction">&quot;https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate&quot;</p>
+<p n="Authorization">Basic dGlidGVzdDp0aWJ0ZXN0</p>
+<p n="User-Agent">BW-HTTPClient/5.4</p>
+<p n="Host">localhost:9002</p>
+<p n="Content-Length">1345</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;1502152975191093523432126706134266935234&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IDWBES&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;309700&lt;/ns0:zip&gt;&lt;ns0:city&gt;Liebefeld&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;40320081&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&lt;ns0:fibreCircuitState&gt;&lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&lt;/ns0:fibreCircuitState&gt;&lt;ns0:startPeriod&gt;2017-02-28T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="178" t="5">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Content-Type">text/html; charset=US-ASCII</p>
+<p n="Content-Length">171</p>
+</m>
+<bd chs="US-ASCII">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /wfm/services/WfmAppBookingV002 was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="166" nd="true">
+<sp>
+<t id="179">
+<rq id="180" op="multiplexAppointmentCalculate" tl="EXACT">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">2525382977301814982632126706134266949826</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">1-IG3RS0</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">800500</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Z&#252;rich</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">62733421</p>
+<p n="getAppointmentTimeSlotsFuf_networkLocation" t="arg:EQUALS;false;;;;">79ZHFB</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_1" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_3" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_3" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_4" t="arg:EQUALS;false;;;;">40</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_4" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_5" t="arg:EQUALS;false;;;;">91</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_5" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_6" t="arg:EQUALS;false;;;;">51</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_6" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_2" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2017-02-27T16:26:48+01:00</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">wfm</p>
+<p n="HTTP-Segment-Attr-1">services</p>
+<p n="HTTP-Segment-Attr-2">WfmAppBookingV002</p>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIj48U09BUC1FTlY6Qm9keT48bnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlIHhtbG5zOm5zMD0iYXBzLm1Mb2dpc3RpY3MuYXBwQm9va2luZy52MiI+PG5zMDpnZXRBcHBvaW50bWVudFRpbWVTbG90c0Z1Zj48bnMwOmdlSWQ+MjUyNTM4Mjk3NzMwMTgxNDk4MjYzMjEyNjcwNjEzNDI2Njk0OTgyNjwvbnMwOmdlSWQ+PG5zMDpzb3VyY2VBcHBsaWNhdGlvbklkPlNCTDwvbnMwOnNvdXJjZUFwcGxpY2F0aW9uSWQ+PG5zMDpzeW5jSWQ+MS1JRzNSUzA8L25zMDpzeW5jSWQ+PG5zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6emlwPjgwMDUwMDwvbnMwOnppcD48bnMwOmNpdHk+WsO8cmljaDwvbnMwOmNpdHk+PG5zMDpjb3VudHJ5PkNIPC9uczA6Y291bnRyeT48bnMwOmdhaWFJZD42MjczMzQyMTwvbnMwOmdhaWFJZD48L25zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6bmV0d29ya0xvY2F0aW9uPjc5WkhGQjwvbnMwOm5ldHdvcmtMb2NhdGlvbj48bnMwOmZ1bGZpbGxtZW50U3RyYXRlZ3lMZXZlbD4xPC9uczA6ZnVsZmlsbG1lbnRTdHJhdGVneUxldmVsPjxuczA6c2xvdENsYXNzPjIwPC9uczA6c2xvdENsYXNzPjxuczA6c3pmUXVhbGlmaWNhdGlvbj4wPC9uczA6c3pmUXVhbGlmaWNhdGlvbj48bnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6YnVzaW5lc3NMaW5lPjMwPC9uczA6YnVzaW5lc3NMaW5lPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+MTE8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT4xMDwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjMwPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+NDA8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT45MTwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjUxPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjwvbnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6ZnVmU2VydmljZUluZm8+PG5zMDpidXNpbmVzc0xpbmU+MjA8L25zMDpidXNpbmVzc0xpbmU+PC9uczA6ZnVmU2VydmljZUluZm8+PG5zMDpsb2NhbExvb3BUeXBlPjE8L25zMDpsb2NhbExvb3BUeXBlPjxuczA6c3RhcnRQZXJpb2Q+MjAxNy0wMi0yN1QxNjoyNjo0OCswMTowMDwvbnMwOnN0YXJ0UGVyaW9kPjwvbnMwOmdldEFwcG9pbnRtZW50VGltZVNsb3RzRnVmPjwvbnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlPjwvU09BUC1FTlY6Qm9keT48L1NPQVAtRU5WOkVudmVsb3BlPg==</p>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2525382977301814982632126706134266949826&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-27T16:26:48+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/wfm/services/WfmAppBookingV002</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="content-type">text/xml; charset=&quot;utf-8&quot;</p>
+<p n="SoapAction">&quot;https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate&quot;</p>
+<p n="Authorization">Basic dGlidGVzdDp0aWJ0ZXN0</p>
+<p n="User-Agent">BW-HTTPClient/5.4</p>
+<p n="Host">localhost:9002</p>
+<p n="Content-Length">1654</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2525382977301814982632126706134266949826&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-27T16:26:48+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="181" t="3">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Content-Type">text/html; charset=US-ASCII</p>
+<p n="Content-Length">171</p>
+</m>
+<bd chs="US-ASCII">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /wfm/services/WfmAppBookingV002 was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="167">
+<rq id="182" op="multiplexAppointmentCalculate" tl="EXACT">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">2683522978357175712232126706134266957122</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">1-IG3RS0</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">800500</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Z&#252;rich</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">62733421</p>
+<p n="getAppointmentTimeSlotsFuf_networkLocation" t="arg:EQUALS;false;;;;">79ZHFB</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_1" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_3" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_3" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_4" t="arg:EQUALS;false;;;;">40</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_4" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_5" t="arg:EQUALS;false;;;;">91</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_5" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_6" t="arg:EQUALS;false;;;;">51</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_6" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_2" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2017-02-27T16:26:59+01:00</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">wfm</p>
+<p n="HTTP-Segment-Attr-1">services</p>
+<p n="HTTP-Segment-Attr-2">WfmAppBookingV002</p>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIj48U09BUC1FTlY6Qm9keT48bnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlIHhtbG5zOm5zMD0iYXBzLm1Mb2dpc3RpY3MuYXBwQm9va2luZy52MiI+PG5zMDpnZXRBcHBvaW50bWVudFRpbWVTbG90c0Z1Zj48bnMwOmdlSWQ+MjY4MzUyMjk3ODM1NzE3NTcxMjIzMjEyNjcwNjEzNDI2Njk1NzEyMjwvbnMwOmdlSWQ+PG5zMDpzb3VyY2VBcHBsaWNhdGlvbklkPlNCTDwvbnMwOnNvdXJjZUFwcGxpY2F0aW9uSWQ+PG5zMDpzeW5jSWQ+MS1JRzNSUzA8L25zMDpzeW5jSWQ+PG5zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6emlwPjgwMDUwMDwvbnMwOnppcD48bnMwOmNpdHk+WsO8cmljaDwvbnMwOmNpdHk+PG5zMDpjb3VudHJ5PkNIPC9uczA6Y291bnRyeT48bnMwOmdhaWFJZD42MjczMzQyMTwvbnMwOmdhaWFJZD48L25zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6bmV0d29ya0xvY2F0aW9uPjc5WkhGQjwvbnMwOm5ldHdvcmtMb2NhdGlvbj48bnMwOmZ1bGZpbGxtZW50U3RyYXRlZ3lMZXZlbD4xPC9uczA6ZnVsZmlsbG1lbnRTdHJhdGVneUxldmVsPjxuczA6c2xvdENsYXNzPjIwPC9uczA6c2xvdENsYXNzPjxuczA6c3pmUXVhbGlmaWNhdGlvbj4wPC9uczA6c3pmUXVhbGlmaWNhdGlvbj48bnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6YnVzaW5lc3NMaW5lPjMwPC9uczA6YnVzaW5lc3NMaW5lPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+MTE8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT4xMDwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjMwPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+NDA8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT45MTwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjUxPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjwvbnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6ZnVmU2VydmljZUluZm8+PG5zMDpidXNpbmVzc0xpbmU+MjA8L25zMDpidXNpbmVzc0xpbmU+PC9uczA6ZnVmU2VydmljZUluZm8+PG5zMDpsb2NhbExvb3BUeXBlPjE8L25zMDpsb2NhbExvb3BUeXBlPjxuczA6c3RhcnRQZXJpb2Q+MjAxNy0wMi0yN1QxNjoyNjo1OSswMTowMDwvbnMwOnN0YXJ0UGVyaW9kPjwvbnMwOmdldEFwcG9pbnRtZW50VGltZVNsb3RzRnVmPjwvbnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlPjwvU09BUC1FTlY6Qm9keT48L1NPQVAtRU5WOkVudmVsb3BlPg==</p>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2683522978357175712232126706134266957122&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-27T16:26:59+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/wfm/services/WfmAppBookingV002</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="content-type">text/xml; charset=&quot;utf-8&quot;</p>
+<p n="SoapAction">&quot;https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate&quot;</p>
+<p n="Authorization">Basic dGlidGVzdDp0aWJ0ZXN0</p>
+<p n="User-Agent">BW-HTTPClient/5.4</p>
+<p n="Host">localhost:9002</p>
+<p n="Content-Length">1654</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2683522978357175712232126706134266957122&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-27T16:26:59+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="183" t="3">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Content-Type">text/html; charset=US-ASCII</p>
+<p n="Content-Length">171</p>
+</m>
+<bd chs="US-ASCII">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /wfm/services/WfmAppBookingV002 was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="168">
+<rq id="184" op="multiplexAppointmentCalculate" tl="EXACT">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">2836792979212534441832126706134266944418</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">1-IG3RS0</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">800500</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Z&#252;rich</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">62733421</p>
+<p n="getAppointmentTimeSlotsFuf_networkLocation" t="arg:EQUALS;false;;;;">79ZHFB</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_1" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_3" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_3" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_4" t="arg:EQUALS;false;;;;">40</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_4" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_5" t="arg:EQUALS;false;;;;">91</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_5" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_6" t="arg:EQUALS;false;;;;">51</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_6" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_2" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2017-02-28T01:30:00+01:00</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">wfm</p>
+<p n="HTTP-Segment-Attr-1">services</p>
+<p n="HTTP-Segment-Attr-2">WfmAppBookingV002</p>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIj48U09BUC1FTlY6Qm9keT48bnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlIHhtbG5zOm5zMD0iYXBzLm1Mb2dpc3RpY3MuYXBwQm9va2luZy52MiI+PG5zMDpnZXRBcHBvaW50bWVudFRpbWVTbG90c0Z1Zj48bnMwOmdlSWQ+MjgzNjc5Mjk3OTIxMjUzNDQ0MTgzMjEyNjcwNjEzNDI2Njk0NDQxODwvbnMwOmdlSWQ+PG5zMDpzb3VyY2VBcHBsaWNhdGlvbklkPlNCTDwvbnMwOnNvdXJjZUFwcGxpY2F0aW9uSWQ+PG5zMDpzeW5jSWQ+MS1JRzNSUzA8L25zMDpzeW5jSWQ+PG5zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6emlwPjgwMDUwMDwvbnMwOnppcD48bnMwOmNpdHk+WsO8cmljaDwvbnMwOmNpdHk+PG5zMDpjb3VudHJ5PkNIPC9uczA6Y291bnRyeT48bnMwOmdhaWFJZD42MjczMzQyMTwvbnMwOmdhaWFJZD48L25zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6bmV0d29ya0xvY2F0aW9uPjc5WkhGQjwvbnMwOm5ldHdvcmtMb2NhdGlvbj48bnMwOmZ1bGZpbGxtZW50U3RyYXRlZ3lMZXZlbD4xPC9uczA6ZnVsZmlsbG1lbnRTdHJhdGVneUxldmVsPjxuczA6c2xvdENsYXNzPjIwPC9uczA6c2xvdENsYXNzPjxuczA6c3pmUXVhbGlmaWNhdGlvbj4wPC9uczA6c3pmUXVhbGlmaWNhdGlvbj48bnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6YnVzaW5lc3NMaW5lPjMwPC9uczA6YnVzaW5lc3NMaW5lPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+MTE8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT4xMDwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjMwPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+NDA8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT45MTwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjUxPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjwvbnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6ZnVmU2VydmljZUluZm8+PG5zMDpidXNpbmVzc0xpbmU+MjA8L25zMDpidXNpbmVzc0xpbmU+PC9uczA6ZnVmU2VydmljZUluZm8+PG5zMDpsb2NhbExvb3BUeXBlPjE8L25zMDpsb2NhbExvb3BUeXBlPjxuczA6c3RhcnRQZXJpb2Q+MjAxNy0wMi0yOFQwMTozMDowMCswMTowMDwvbnMwOnN0YXJ0UGVyaW9kPjwvbnMwOmdldEFwcG9pbnRtZW50VGltZVNsb3RzRnVmPjwvbnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlPjwvU09BUC1FTlY6Qm9keT48L1NPQVAtRU5WOkVudmVsb3BlPg==</p>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2836792979212534441832126706134266944418&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-28T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/wfm/services/WfmAppBookingV002</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="content-type">text/xml; charset=&quot;utf-8&quot;</p>
+<p n="SoapAction">&quot;https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate&quot;</p>
+<p n="Authorization">Basic dGlidGVzdDp0aWJ0ZXN0</p>
+<p n="User-Agent">BW-HTTPClient/5.4</p>
+<p n="Host">localhost:9002</p>
+<p n="Content-Length">1654</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2836792979212534441832126706134266944418&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-28T01:30:00+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="185" t="4">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Content-Type">text/html; charset=US-ASCII</p>
+<p n="Content-Length">171</p>
+</m>
+<bd chs="US-ASCII">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /wfm/services/WfmAppBookingV002 was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="186" op="multiplexAppointmentCalculate" tl="SIGNATURE">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">2525382977301814982632126706134266949826</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">1-IG3RS0</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">800500</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Z&#252;rich</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">62733421</p>
+<p n="getAppointmentTimeSlotsFuf_networkLocation" t="arg:EQUALS;false;;;;">79ZHFB</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_1" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_3" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_3" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_4" t="arg:EQUALS;false;;;;">40</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_4" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_5" t="arg:EQUALS;false;;;;">91</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_5" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_6" t="arg:EQUALS;false;;;;">51</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_6" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine_2" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2017-02-27T16:26:48+01:00</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">wfm</p>
+<p n="HTTP-Segment-Attr-1">services</p>
+<p n="HTTP-Segment-Attr-2">WfmAppBookingV002</p>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIj48U09BUC1FTlY6Qm9keT48bnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlIHhtbG5zOm5zMD0iYXBzLm1Mb2dpc3RpY3MuYXBwQm9va2luZy52MiI+PG5zMDpnZXRBcHBvaW50bWVudFRpbWVTbG90c0Z1Zj48bnMwOmdlSWQ+MjUyNTM4Mjk3NzMwMTgxNDk4MjYzMjEyNjcwNjEzNDI2Njk0OTgyNjwvbnMwOmdlSWQ+PG5zMDpzb3VyY2VBcHBsaWNhdGlvbklkPlNCTDwvbnMwOnNvdXJjZUFwcGxpY2F0aW9uSWQ+PG5zMDpzeW5jSWQ+MS1JRzNSUzA8L25zMDpzeW5jSWQ+PG5zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6emlwPjgwMDUwMDwvbnMwOnppcD48bnMwOmNpdHk+WsO8cmljaDwvbnMwOmNpdHk+PG5zMDpjb3VudHJ5PkNIPC9uczA6Y291bnRyeT48bnMwOmdhaWFJZD42MjczMzQyMTwvbnMwOmdhaWFJZD48L25zMDpjdXN0b21lckxvY2F0aW9uPjxuczA6bmV0d29ya0xvY2F0aW9uPjc5WkhGQjwvbnMwOm5ldHdvcmtMb2NhdGlvbj48bnMwOmZ1bGZpbGxtZW50U3RyYXRlZ3lMZXZlbD4xPC9uczA6ZnVsZmlsbG1lbnRTdHJhdGVneUxldmVsPjxuczA6c2xvdENsYXNzPjIwPC9uczA6c2xvdENsYXNzPjxuczA6c3pmUXVhbGlmaWNhdGlvbj4wPC9uczA6c3pmUXVhbGlmaWNhdGlvbj48bnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6YnVzaW5lc3NMaW5lPjMwPC9uczA6YnVzaW5lc3NMaW5lPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+MTE8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT4xMDwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjMwPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjxuczA6d29ya1BhY2thZ2U+PG5zMDp3cENvZGU+NDA8L25zMDp3cENvZGU+PG5zMDpxdWFudGl0eT4xPC9uczA6cXVhbnRpdHk+PC9uczA6d29ya1BhY2thZ2U+PG5zMDp3b3JrUGFja2FnZT48bnMwOndwQ29kZT45MTwvbnMwOndwQ29kZT48bnMwOnF1YW50aXR5PjE8L25zMDpxdWFudGl0eT48L25zMDp3b3JrUGFja2FnZT48bnMwOndvcmtQYWNrYWdlPjxuczA6d3BDb2RlPjUxPC9uczA6d3BDb2RlPjxuczA6cXVhbnRpdHk+MTwvbnMwOnF1YW50aXR5PjwvbnMwOndvcmtQYWNrYWdlPjwvbnMwOmZ1ZlNlcnZpY2VJbmZvPjxuczA6ZnVmU2VydmljZUluZm8+PG5zMDpidXNpbmVzc0xpbmU+MjA8L25zMDpidXNpbmVzc0xpbmU+PC9uczA6ZnVmU2VydmljZUluZm8+PG5zMDpsb2NhbExvb3BUeXBlPjE8L25zMDpsb2NhbExvb3BUeXBlPjxuczA6c3RhcnRQZXJpb2Q+MjAxNy0wMi0yN1QxNjoyNjo0OCswMTowMDwvbnMwOnN0YXJ0UGVyaW9kPjwvbnMwOmdldEFwcG9pbnRtZW50VGltZVNsb3RzRnVmPjwvbnMwOm11bHRpcGxleEFwcG9pbnRtZW50Q2FsY3VsYXRlPjwvU09BUC1FTlY6Qm9keT48L1NPQVAtRU5WOkVudmVsb3BlPg==</p>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2525382977301814982632126706134266949826&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-27T16:26:48+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/wfm/services/WfmAppBookingV002</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="content-type">text/xml; charset=&quot;utf-8&quot;</p>
+<p n="SoapAction">&quot;https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate&quot;</p>
+<p n="Authorization">Basic dGlidGVzdDp0aWJ0ZXN0</p>
+<p n="User-Agent">BW-HTTPClient/5.4</p>
+<p n="Host">localhost:9002</p>
+<p n="Content-Length">1654</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&lt;ns0:getAppointmentTimeSlotsFuf&gt;&lt;ns0:geId&gt;2525382977301814982632126706134266949826&lt;/ns0:geId&gt;&lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&lt;ns0:syncId&gt;1-IG3RS0&lt;/ns0:syncId&gt;&lt;ns0:customerLocation&gt;&lt;ns0:zip&gt;800500&lt;/ns0:zip&gt;&lt;ns0:city&gt;Z&#252;rich&lt;/ns0:city&gt;&lt;ns0:country&gt;CH&lt;/ns0:country&gt;&lt;ns0:gaiaId&gt;62733421&lt;/ns0:gaiaId&gt;&lt;/ns0:customerLocation&gt;&lt;ns0:networkLocation&gt;79ZHFB&lt;/ns0:networkLocation&gt;&lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;ns0:workPackage&gt;&lt;ns0:wpCode&gt;51&lt;/ns0:wpCode&gt;&lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&lt;/ns0:workPackage&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:fufServiceInfo&gt;&lt;ns0:businessLine&gt;20&lt;/ns0:businessLine&gt;&lt;/ns0:fufServiceInfo&gt;&lt;ns0:localLoopType&gt;1&lt;/ns0:localLoopType&gt;&lt;ns0:startPeriod&gt;2017-02-27T16:26:48+01:00&lt;/ns0:startPeriod&gt;&lt;/ns0:getAppointmentTimeSlotsFuf&gt;&lt;/ns0:multiplexAppointmentCalculate&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="187" t="3">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Content-Type">text/html; charset=US-ASCII</p>
+<p n="Content-Length">171</p>
+</m>
+<bd chs="US-ASCII">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /wfm/services/WfmAppBookingV002 was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="171" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="170" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Thu Nov 16 12:53:30 GMT 2017 -->
+
+
+<Results name="tcValidate_PoC_Workflow">
+
+
+    <Result node="fetchAppointmentDetails">
+      <content type="xstream" charset="UTF-8"><![CDATA[<com.itko.lisa.jdbc.JDBCResultSetCache>
+  <rows>
+    <list>
+      <string>10010695</string>
+      <string>0188726503366338809832552871291160833932</string>
+      <string>5-5JBDJ1IL</string>
+      <string>2016-12-28T13:00:00+01:00</string>
+      <string>2016-12-28T17:00:00+01:00</string>
+      <string>2017-01-24 00:00:00.0</string>
+      <string>BOOKED</string>
+    </list>
+  </rows>
+  <columns>
+    <string>APPOINTMENTID</string>
+    <string>GETID</string>
+    <string>SYNCID</string>
+    <string>STARTDATE</string>
+    <string>ENDDATE</string>
+    <string>CURRENTTIMESTAMP</string>
+    <string>STATUS</string>
+  </columns>
+  <maxRows>2147483647</maxRows>
+  <columnCount>7</columnCount>
+</com.itko.lisa.jdbc.JDBCResultSetCache>]]></content>
+    </Result>
+
+
+    <Result node="osiNew">
+      <content type="xstream" charset="UTF-8"><![CDATA[<com.itko.lisa.gui.XMLResultsCache>
+  <Sxml>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xd;
+&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xd;
+  &lt;soapenv:Body&gt;&#xd;
+    &lt;osiNewResponse xmlns=&quot;http://www.logobject.ch/ns/task/tibco&quot;&gt;&#xd;
+      &lt;errorStatus xmlns=&quot;&quot;&gt;&#xd;
+        &lt;errorCode&gt;0&lt;/errorCode&gt;&#xd;
+        &lt;errorText&gt;SUCCESS&lt;/errorText&gt;&#xd;
+      &lt;/errorStatus&gt;&#xd;
+    &lt;/osiNewResponse&gt;&#xd;
+  &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;&#xd;
+&#xd;
+</Sxml>
+  <headers>HTTP/1.1 200 OK&#xd;
+Server: LISA/Virtual-Environment-Server&#xd;
+Date: Tue, 24 Jan 2017 00:44:28 CET&#xd;
+X-Powered-By: LISA/10.0.0 (10.0.0.431)&#xd;
+Content-Type: text/xml; charset=utf-8&#xd;
+Content-Length: 439&#xd;
+</headers>
+  <attachments/>
+</com.itko.lisa.gui.XMLResultsCache>]]></content>
+    </Result>
+
+
+</Results>

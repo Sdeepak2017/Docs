@@ -1,0 +1,17 @@
+<Asset Version="2"><AssetInfo type="javax.jms.Connection" hashcode="-1278171845"><Url>config://asset.conn-5A98E100C8F511E6958400059A3C7A00</Url>
+<Description></Description>
+</AssetInfo>
+<ConnectionFromFactory>
+<ConnectionFactory>
+<AssetInfo type="javax.jms.ConnectionFactory" hashcode="-1814320742"><Url>config://asset.jndijms-52B0A5DCC8F511E6958400059A3C7A00</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</ConnectionFactory>
+<Username>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</Username>
+</ConnectionFromFactory>
+</Asset>

@@ -1,0 +1,89 @@
+{
+    "modifyDate": "2017-01-24T19:14:18+01:00",
+    "description": "",
+    "appliedDPH": [{
+        "isRequest": true,
+        "isResponse": false,
+        "name": "XML Data Protocol",
+        "className": "com.itko.lisa.vse.stateful.protocol.xml.XMLDataProtocol",
+        "id": "E0584E49E26011E6921A800B20524153",
+        "config": {},
+        "userConfigured": true
+    }],
+    "artifactGeneration": {
+        "exportFile": "Z:\\DevTest10.0\\vseRecording\\VSE_2013\\D7ADFB9CE26011E6921A800B20524153\\Project\\Data\\DummyAppointment.xml",
+        "allowDupSpecificTxns": false,
+        "basePath": "/",
+        "defaultNonLeafNavigation": "WIDE",
+        "defaultLeafNavigation": "LOOSE",
+        "vsmStyle": "EFFICIENT"
+    },
+    "statusDescription": "Saved",
+    "transportProtocol": {
+        "protocolId": "HTTP_GATEWAY",
+        "statelessTxns": false,
+        "deidentifyTxn": false,
+        "protocolConfig": {
+            "allowModifyHostHeader": false,
+            "targetEndpoint": {
+                "sslConfig": {
+                    "aliasPassword": "",
+                    "password": "",
+                    "filename": "",
+                    "bytes": "",
+                    "alias": "",
+                    "hash": 0
+                },
+                "port": 0,
+                "host": "",
+                "hash": 0,
+                "useSSL": false
+            },
+            "recordingEndpoint": {
+                "sslConfig": {
+                    "aliasPassword": "",
+                    "password": "",
+                    "filename": "",
+                    "bytes": "",
+                    "alias": "",
+                    "hash": 0
+                },
+                "port": 32481,
+                "host": "",
+                "hash": 0,
+                "useSSL": false
+            }
+        },
+        "protocolVersion": "1.0"
+    },
+    "name": "DummyAppointment",
+    "saveVsConfig": {
+        "concurrentCapacity": 1,
+        "thinkTime": 100,
+        "groupTag": "",
+        "saveOption": "saveDeploy",
+        "leafNavigation": "Loose",
+        "allowDupSpecific": false,
+        "defaultNavigation": "Wide",
+        "createBaseline": false,
+        "vsmStyle": "efficient"
+    },
+    "bundleIds": ["1bCNirt0n5F8BF38kitLkB"],
+    "validationMsgs": [{
+        "level": "WARNING",
+        "category": "targetURLValidation",
+        "message": "unspecified targetHost or targetPort"
+    }],
+    "id": "D7ADFB9CE26011E6921A800B20524153",
+    "detectedDPH": [{
+        "isRequest": true,
+        "isResponse": false,
+        "name": "XML Data Protocol",
+        "className": "com.itko.lisa.vse.stateful.protocol.xml.XMLDataProtocol",
+        "id": "E057D917E26011E6921A800B20524153",
+        "config": {},
+        "userConfigured": false
+    }],
+    "status": 9,
+    "createDate": "2017-01-24T19:13:44+01:00"
+}

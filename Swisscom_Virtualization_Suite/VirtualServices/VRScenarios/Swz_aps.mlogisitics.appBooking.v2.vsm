@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSModel name="Swz_aps.mlogisitics.appBooking.v2" version="5">
+
+<meta>
+   <create author="admin" buildNumber="9.1.0.399" date="01/20/2017" host="INBASDPC12269" version="9.1.0"/>
+   <lastEdited author="admin" buildNumber="9.1.0.399" date="01/23/2017" host="INBASDLP00207" version="9.1.0"/>
+</meta>
+
+<id>CC86858DDF0411E6875600059A3C7A00</id>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj05LjEuMCAoOS4xLjAuMzk5KSZub2Rlcz0tOTM4OTI1MDEx</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+    <Node log="" name="HTTP/S Listen" next="Virtual Service Execution Router" quiet="true" think="0" type="com.itko.lisa.vse.stateful.protocol.http.HttpListenStep" uid="null" useFilters="true" version="1"> 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.vse.stateful.common.DataProtocolFilter">
+        <valueToFilterKey>lisa.vse.request</valueToFilterKey>
+<dataProtocol>com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler</dataProtocol>
+<processRequests>true</processRequests>
+<processResponses>false</processResponses>
+<CustomFilterData>
+</CustomFilterData>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>osiId</tag>
+      <tagn>1</tagn>
+      <prop>Order_OSIID</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>oeOrderId</tag>
+      <tagn>1</tagn>
+      <prop>Order_ORDERID</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>geId</tag>
+      <tagn>1</tagn>
+      <prop>Order_GEID</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>syncId</tag>
+      <tagn>1</tagn>
+      <prop>Order_SYNCID</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>appId</tag>
+      <tagn>1</tagn>
+      <prop>Order_APPID</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>appStartDate</tag>
+      <tagn>1</tagn>
+      <prop>Order_APPSTARTDATE</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>appEndDate</tag>
+      <tagn>1</tagn>
+      <prop>Order_APPENDDATE</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>customerWishDate</tag>
+      <tagn>1</tagn>
+      <prop>Order_CUSTOMERWISHDATE</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.HTTP/S Listen.rsp</valueToFilterKey>
+      <tag>slaEndDate</tag>
+      <tagn>1</tagn>
+      <prop>Order_SLAENDDATE</prop>
+      </Filter>
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If being efficient" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Most Efficient, branching to VS Image Response Selection</log>
+<then>VS Image Response Selection</then>
+<valueToAssertKey/>
+        <executionMode>EFFICIENT</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<listenPort>6062</listenPort>
+<bindAddress/>
+<basePath>/axis/services/IOsiTaskPort</basePath>
+<bindOnly>false</bindOnly>
+<useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
+    </Node>
+
+
+    <Node log="" name="Virtual Service Execution Router" next="VS Image Response Selection" quiet="true" think="0" type="com.itko.lisa.vse.stateful.VSRouterStep" uid="null" useFilters="true" version="1"> 
+
+<onerror>abort</onerror>
+<script>// This script must return either an enum entry from ExecutionMode or&#xd;
+// a string that is the name of an enum entry.  The DYNAMIC entry may&#xd;
+// not be returned.  It will be executed for DYNAMIC execution mode&#xd;
+// only.&#xd;
+import com.itko.lisa.vse.ExecutionMode;&#xd;
+&#xd;
+return ExecutionMode.EFFICIENT;&#xd;
+&#xd;
+&#xd;
+/* other values: &#xd;
+	ExecutionMode.TRACK;&#xd;
+	ExecutionMode.STAND_IN;&#xd;
+	ExecutionMode.LIVE;&#xd;
+	ExecutionMode.FAILOVER;&#xd;
+	ExecutionMode.VALIDATION;&#xd;
+	ExecutionMode.LEARNING;&#xd;
+*/&#xd;
+</script>
+<supportedModes>
+<mode>TRACK</mode>
+<mode>EFFICIENT</mode>
+<mode>DYNAMIC</mode>
+</supportedModes>
+    </Node>
+
+
+    <Node log="" name="VS Image Response Selection" next="HTTP/S Respond" quiet="true" think="0" type="com.itko.lisa.vse.stateful.ConversationalStep" uid="null" useFilters="true" version="1"> 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If tracking" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Transaction Tracking, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey/>
+        <executionMode>TRACK</executionMode>
+</CheckResult>
+
+<vsiSource>{{LISA_RELATIVE_PROJ_ROOT}}/VirtualServices/Images/Swz_aps.mlogisitics.appBooking.v2.vsi</vsiSource>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<outputAsObject>true</outputAsObject>
+<liveInvocationStep/>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node log="" name="HTTP/S Respond" next="HTTP/S Listen" quiet="false" think="0" type="com.itko.lisa.vse.stateful.protocol.http.HttpRespondStep" uid="null" useFilters="true" version="1"> 
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node log="" name="Virtual Service Tracking" next="HTTP/S Respond" quiet="true" think="0" type="com.itko.lisa.vse.stateful.VSTrackingStep" uid="null" useFilters="true" version="1"> 
+
+<imageResponseProperty>lisa.vse.image.response</imageResponseProperty>
+<liveResponseProperty>lisa.vse.live.response</liveResponseProperty>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node log="" name="end" next="fail" quiet="true" think="0h" type="com.itko.lisa.test.NormalEnd" uid="CC86858FDF0411E6875600059A3C7A00" useFilters="true" version="1"> 
+
+    </Node>
+
+
+    <Node log="" name="fail" next="fail" quiet="true" think="0h" type="com.itko.lisa.test.Abend" uid="CC868591DF0411E6875600059A3C7A00" useFilters="true" version="1"> 
+
+    </Node>
+
+
+    <Node log="The test was aborted" name="abort" next="fail" quiet="true" think="0h" type="com.itko.lisa.test.AbortStep" uid="CC868593DF0411E6875600059A3C7A00" useFilters="true" version="1"> 
+
+    </Node>
+
+
+</VSModel>

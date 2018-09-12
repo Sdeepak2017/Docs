@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapmsg>
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:osit="http://tibco.swisscom.com/ns/OsiTaskTibco/">
+      <soapenv:Header />
+      <soapenv:Body>
+         <osit:wfmStateOsi>
+            <taskHeader>
+               <osiId>ALL:SUB:10000173833243</osiId>
+               <oeOrderId>5-433867539103</oeOrderId>
+               <requestId>OX.CoPE++cope:cid:4367803##0967160775863972160232552871293144021602@@5-5JBDH4RH</requestId>
+               <appId>100296</appId>
+               <srIntegrationId>SBL:5-433867447070</srIntegrationId>
+               <customerId>88830773</customerId>
+            </taskHeader>
+            <wfmState>
+               <stateCode>40</stateCode>
+               <stateText>ReadyToClean</stateText>
+               <stateDate>2016-12-22T12:23:06+01:00</stateDate>
+            </wfmState>
+            <orderedMaterial>
+               <matNr>10240230</matNr>
+               <quantity>1</quantity>
+               <positionNumber>5</positionNumber>
+               <deliveryMode>20</deliveryMode>
+            </orderedMaterial>
+            <orderedMaterial>
+               <matNr>10240230</matNr>
+               <quantity>1</quantity>
+               <positionNumber>75</positionNumber>
+               <deliveryMode>20</deliveryMode>
+            </orderedMaterial>
+            <installedMaterial>
+               <matNr>10240230</matNr>
+               <quantity>1</quantity>
+               <positionNumber>5</positionNumber>
+               <deliveryMode>20</deliveryMode>
+            </installedMaterial>
+            <installedMaterial>
+               <matNr>11004399</matNr>
+               <quantity>1</quantity>
+               <positionNumber>6</positionNumber>
+               <deliveryMode>20</deliveryMode>
+            </installedMaterial>
+            <installedMaterial>
+               <matNr>10240230</matNr>
+               <quantity>1</quantity>
+               <positionNumber>75</positionNumber>
+               <deliveryMode>20</deliveryMode>
+            </installedMaterial>
+         </osit:wfmStateOsi>
+      </soapenv:Body>
+   </soapenv:Envelope>
+</soapmsg>

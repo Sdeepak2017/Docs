@@ -1,0 +1,190 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="20" name="Swz_aps.mlogisitics.appBooking.v2" created="2017-01-16.17:34:22.500" lastModified="2017-02-27.16:11:04.757" version="10.0.0" buildNumber="10.0.0.431">
+<st>
+<t id="11" nd="true">
+<sp>
+<t id="12">
+<rq id="28" op="bookAppointment" tl="EXACT">
+<ag>
+<p n="geId" t="arg:EQUALS;false;;;;">1845446504221697539432552871293144075394</p>
+<p n="sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="syncId" t="arg:EQUALS;false;;;;">5-5JBDJ1IL</p>
+<p n="selectedSlot_id" t="arg:EQUALS;false;;;;">12788648</p>
+</ag>
+<at>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13; &lt;ns0:bookAppointment xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;    &lt;ns0:geId&gt;1845446504221697539432552871293144075394&lt;/ns0:geId&gt;&#13;    &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;    &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;    &lt;ns0:selectedSlot&gt;&#13;       &lt;ns0:id&gt;12788648&lt;/ns0:id&gt;&#13;    &lt;/ns0:selectedSlot&gt;&#13; &lt;/ns0:bookAppointment&gt;&#13; </p>
+</at>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;ns0:bookAppointment xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;   &lt;ns0:geId&gt;1845446504221697539432552871293144075394&lt;/ns0:geId&gt;&#13;&#10;   &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;&#10;   &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;&#10;   &lt;ns0:selectedSlot&gt;&#13;&#10;      &lt;ns0:id&gt;12788648&lt;/ns0:id&gt;&#13;&#10;   &lt;/ns0:selectedSlot&gt;&#13;&#10;&lt;/ns0:bookAppointment&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="29" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;aps:bookAppointmentResponse xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:aps=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;    &lt;aps:envelope&gt;&#13;&#10;        &lt;aps:appointment&gt;&#13;&#10;            &lt;aps:id&gt;{{BA_APPID}}&lt;/aps:id&gt;&#13;&#10;            &lt;aps:businessLine&gt;30&lt;/aps:businessLine&gt;&#13;&#10;            &lt;aps:serviceType&gt;OSI-Appointment&lt;/aps:serviceType&gt;&#13;&#10;            &lt;aps:expirationDateTime&gt;2016-12-22T17:43:53+01:00&lt;/aps:expirationDateTime&gt;&#13;&#10;        &lt;/aps:appointment&gt;&#13;&#10;        &lt;aps:responseStatus&gt;&#13;&#10;            &lt;aps:code&gt;0&lt;/aps:code&gt;&#13;&#10;            &lt;aps:text&gt;success&lt;/aps:text&gt;&#13;&#10;        &lt;/aps:responseStatus&gt;&#13;&#10;    &lt;/aps:envelope&gt;&#13;&#10;&lt;/aps:bookAppointmentResponse&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="30" op="bookAppointment" tl="SIGNATURE">
+<ag>
+<p n="geId" t="arg:EQUALS;false;;;;">1845446504221697539432552871293144075394</p>
+<p n="sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="syncId" t="arg:EQUALS;false;;;;">5-5JBDJ1IL</p>
+<p n="selectedSlot_id" t="arg:EQUALS;false;;;;">12788648</p>
+</ag>
+<at>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;ns0:bookAppointment xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;   &lt;ns0:geId&gt;1845446504221697539432552871293144075394&lt;/ns0:geId&gt;&#13;&#10;   &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;&#10;   &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;&#10;   &lt;ns0:selectedSlot&gt;&#13;&#10;      &lt;ns0:id&gt;12788648&lt;/ns0:id&gt;&#13;&#10;   &lt;/ns0:selectedSlot&gt;&#13;&#10;&lt;/ns0:bookAppointment&gt;&#13;&#10;</p>
+</at>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;ns0:bookAppointment xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;   &lt;ns0:geId&gt;1845446504221697539432552871293144075394&lt;/ns0:geId&gt;&#13;&#10;   &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;&#10;   &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;&#10;   &lt;ns0:selectedSlot&gt;&#13;&#10;      &lt;ns0:id&gt;12788648&lt;/ns0:id&gt;&#13;&#10;   &lt;/ns0:selectedSlot&gt;&#13;&#10;&lt;/ns0:bookAppointment&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="31" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;aps:bookAppointmentResponse xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:aps=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#10;    &lt;aps:envelope&gt;&#10;        &lt;aps:appointment&gt;&#10;            &lt;aps:id&gt;{{BA_APPID}}&lt;/aps:id&gt;&#10;            &lt;aps:businessLine&gt;30&lt;/aps:businessLine&gt;&#10;            &lt;aps:serviceType&gt;OSI-Appointment&lt;/aps:serviceType&gt;&#10;            &lt;aps:expirationDateTime&gt;2016-12-22T17:43:53+01:00&lt;/aps:expirationDateTime&gt;&#10;        &lt;/aps:appointment&gt;&#10;        &lt;aps:responseStatus&gt;&#10;            &lt;aps:code&gt;0&lt;/aps:code&gt;&#10;            &lt;aps:text&gt;success&lt;/aps:text&gt;&#10;        &lt;/aps:responseStatus&gt;&#10;    &lt;/aps:envelope&gt;&#10;&lt;/aps:bookAppointmentResponse&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="32" nd="true">
+<sp>
+<t id="33">
+<rq id="34" op="multiplexAppointmentCalculate" tl="OPERATION">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">0188726503366338809832552871293144088098</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">5-5JBDJ1IL</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">405100</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Basel</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">41570421</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">40</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_3" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_3" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_4" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_4" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_5" t="arg:EQUALS;false;;;;">91</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_5" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">2</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_firstInhouse" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_fibreLinebusinessState" t="arg:EQUALS;false;;;;">50</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_inHousePhysicalOwner" t="arg:EQUALS;false;;;;">400110</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_enforceSla" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2016-12-22T15:41:59+01:00</p>
+</ag>
+<at>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;        &lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;            &lt;ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;                &lt;ns0:geId&gt;0188726503366338809832552871293144088098&lt;/ns0:geId&gt;&#13;&#10;                &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;&#10;                &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;&#10;                &lt;ns0:customerLocation&gt;&#13;&#10;                    &lt;ns0:zip&gt;405100&lt;/ns0:zip&gt;&#13;&#10;                    &lt;ns0:city&gt;Basel&lt;/ns0:city&gt;&#13;&#10;                    &lt;ns0:country&gt;CH&lt;/ns0:country&gt;&#13;&#10;                    &lt;ns0:gaiaId&gt;41570421&lt;/ns0:gaiaId&gt;&#13;&#10;                &lt;/ns0:customerLocation&gt;&#13;&#10;                &lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&#13;&#10;                &lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&#13;&#10;                &lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&#13;&#10;                &lt;ns0:fufServiceInfo&gt;&#13;&#10;                    &lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                &lt;/ns0:fufServiceInfo&gt;&#13;&#10;                &lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&#13;&#10;                &lt;ns0:fibreCircuitState&gt;&#13;&#10;                    &lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&#13;&#10;                    &lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&#13;&#10;                    &lt;ns0:inHousePhysicalOwner&gt;400110&lt;/ns0:inHousePhysicalOwner&gt;&#13;&#10;                    &lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&#13;&#10;                &lt;/ns0:fibreCircuitState&gt;&#13;&#10;                &lt;ns0:startPeriod&gt;2016-12-22T15:41:59+01:00&lt;/ns0:startPeriod&gt;&#13;&#10;            &lt;/ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;        &lt;/ns0:multiplexAppointmentCalculate&gt;&#13;&#10;</p>
+</at>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;   &lt;ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;      &lt;ns0:geId&gt;0188726503366338809832552871293144088098&lt;/ns0:geId&gt;&#13;&#10;      &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;&#10;      &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;&#10;      &lt;ns0:customerLocation&gt;&#13;&#10;         &lt;ns0:zip&gt;405100&lt;/ns0:zip&gt;&#13;&#10;         &lt;ns0:city&gt;Basel&lt;/ns0:city&gt;&#13;&#10;         &lt;ns0:country&gt;CH&lt;/ns0:country&gt;&#13;&#10;         &lt;ns0:gaiaId&gt;41570421&lt;/ns0:gaiaId&gt;&#13;&#10;      &lt;/ns0:customerLocation&gt;&#13;&#10;      &lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&#13;&#10;      &lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&#13;&#10;      &lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&#13;&#10;      &lt;ns0:fufServiceInfo&gt;&#13;&#10;         &lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;      &lt;/ns0:fufServiceInfo&gt;&#13;&#10;      &lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&#13;&#10;      &lt;ns0:fibreCircuitState&gt;&#13;&#10;         &lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&#13;&#10;         &lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&#13;&#10;         &lt;ns0:inHousePhysicalOwner&gt;400110&lt;/ns0:inHousePhysicalOwner&gt;&#13;&#10;         &lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&#13;&#10;      &lt;/ns0:fibreCircuitState&gt;&#13;&#10;      &lt;ns0:startPeriod&gt;2016-12-22T15:41:59+01:00&lt;/ns0:startPeriod&gt;&#13;&#10;   &lt;/ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;&lt;/ns0:multiplexAppointmentCalculate&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="35" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;aps:multiplexAppointmentCalculateResponse xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:aps=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;    &lt;aps:getAppointmentTimeSlotsFufResponse&gt;&#13;&#10;        &lt;aps:envelope&gt;&#13;&#10;            &lt;aps:appointmentScenario&gt;A&lt;/aps:appointmentScenario&gt;&#13;&#10;                {{APP_str1}}&#13;&#10;            &lt;aps:responseStatus&gt;&#13;&#10;                &lt;aps:code&gt;0&lt;/aps:code&gt;&#13;&#10;                &lt;aps:text&gt;Sucess&lt;/aps:text&gt;&#13;&#10;            &lt;/aps:responseStatus&gt;&#13;&#10;        &lt;/aps:envelope&gt;&#13;&#10;    &lt;/aps:getAppointmentTimeSlotsFufResponse&gt;&#13;&#10;&lt;/aps:multiplexAppointmentCalculateResponse&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="36" op="multiplexAppointmentCalculate" tl="OPERATION">
+<ag>
+<p n="getAppointmentTimeSlotsFuf_geId" t="arg:EQUALS;false;;;;">0188726503366338809832552871293144088098</p>
+<p n="getAppointmentTimeSlotsFuf_sourceApplicationId" t="arg:EQUALS;false;;;;">SBL</p>
+<p n="getAppointmentTimeSlotsFuf_syncId" t="arg:EQUALS;false;;;;">5-5JBDJ1IL</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_zip" t="arg:EQUALS;false;;;;">405100</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_city" t="arg:EQUALS;false;;;;">Basel</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_country" t="arg:EQUALS;false;;;;">CH</p>
+<p n="getAppointmentTimeSlotsFuf_customerLocation_gaiaId" t="arg:EQUALS;false;;;;">41570421</p>
+<p n="getAppointmentTimeSlotsFuf_fulfillmentStrategyLevel" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_slotClass" t="arg:EQUALS;false;;;;">20</p>
+<p n="getAppointmentTimeSlotsFuf_szfQualification" t="arg:EQUALS;false;;;;">0</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_businessLine" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_1" t="arg:EQUALS;false;;;;">30</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_1" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_2" t="arg:EQUALS;false;;;;">40</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_2" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_3" t="arg:EQUALS;false;;;;">11</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_3" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_4" t="arg:EQUALS;false;;;;">10</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_4" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_wpCode_5" t="arg:EQUALS;false;;;;">91</p>
+<p n="getAppointmentTimeSlotsFuf_fufServiceInfo_workPackage_quantity_5" t="arg:EQUALS;false;;;;">1</p>
+<p n="getAppointmentTimeSlotsFuf_localLoopType" t="arg:EQUALS;false;;;;">2</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_firstInhouse" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_fibreLinebusinessState" t="arg:EQUALS;false;;;;">50</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_inHousePhysicalOwner" t="arg:EQUALS;false;;;;">400110</p>
+<p n="getAppointmentTimeSlotsFuf_fibreCircuitState_enforceSla" t="arg:EQUALS;false;;;;">false</p>
+<p n="getAppointmentTimeSlotsFuf_startPeriod" t="arg:EQUALS;false;;;;">2016-12-22T15:41:59+01:00</p>
+</ag>
+<at>
+<p n="xmlns:ns0">aps.mLogistics.appBooking.v2</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;        &lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;            &lt;ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;                &lt;ns0:geId&gt;0188726503366338809832552871293144088098&lt;/ns0:geId&gt;&#13;&#10;                &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;&#10;                &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;&#10;                &lt;ns0:customerLocation&gt;&#13;&#10;                    &lt;ns0:zip&gt;405100&lt;/ns0:zip&gt;&#13;&#10;                    &lt;ns0:city&gt;Basel&lt;/ns0:city&gt;&#13;&#10;                    &lt;ns0:country&gt;CH&lt;/ns0:country&gt;&#13;&#10;                    &lt;ns0:gaiaId&gt;41570421&lt;/ns0:gaiaId&gt;&#13;&#10;                &lt;/ns0:customerLocation&gt;&#13;&#10;                &lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&#13;&#10;                &lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&#13;&#10;                &lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&#13;&#10;                &lt;ns0:fufServiceInfo&gt;&#13;&#10;                    &lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                    &lt;ns0:workPackage&gt;&#13;&#10;                        &lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&#13;&#10;                        &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;                    &lt;/ns0:workPackage&gt;&#13;&#10;                &lt;/ns0:fufServiceInfo&gt;&#13;&#10;                &lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&#13;&#10;                &lt;ns0:fibreCircuitState&gt;&#13;&#10;                    &lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&#13;&#10;                    &lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&#13;&#10;                    &lt;ns0:inHousePhysicalOwner&gt;400110&lt;/ns0:inHousePhysicalOwner&gt;&#13;&#10;                    &lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&#13;&#10;                &lt;/ns0:fibreCircuitState&gt;&#13;&#10;                &lt;ns0:startPeriod&gt;2016-12-22T15:41:59+01:00&lt;/ns0:startPeriod&gt;&#13;&#10;            &lt;/ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;        &lt;/ns0:multiplexAppointmentCalculate&gt;&#13;&#10;</p>
+</at>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;ns0:multiplexAppointmentCalculate xmlns:ns0=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;   &lt;ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;      &lt;ns0:geId&gt;0188726503366338809832552871293144088098&lt;/ns0:geId&gt;&#13;&#10;      &lt;ns0:sourceApplicationId&gt;SBL&lt;/ns0:sourceApplicationId&gt;&#13;&#10;      &lt;ns0:syncId&gt;5-5JBDJ1IL&lt;/ns0:syncId&gt;&#13;&#10;      &lt;ns0:customerLocation&gt;&#13;&#10;         &lt;ns0:zip&gt;405100&lt;/ns0:zip&gt;&#13;&#10;         &lt;ns0:city&gt;Basel&lt;/ns0:city&gt;&#13;&#10;         &lt;ns0:country&gt;CH&lt;/ns0:country&gt;&#13;&#10;         &lt;ns0:gaiaId&gt;41570421&lt;/ns0:gaiaId&gt;&#13;&#10;      &lt;/ns0:customerLocation&gt;&#13;&#10;      &lt;ns0:fulfillmentStrategyLevel&gt;1&lt;/ns0:fulfillmentStrategyLevel&gt;&#13;&#10;      &lt;ns0:slotClass&gt;20&lt;/ns0:slotClass&gt;&#13;&#10;      &lt;ns0:szfQualification&gt;0&lt;/ns0:szfQualification&gt;&#13;&#10;      &lt;ns0:fufServiceInfo&gt;&#13;&#10;         &lt;ns0:businessLine&gt;30&lt;/ns0:businessLine&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;30&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;40&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;11&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;10&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;         &lt;ns0:workPackage&gt;&#13;&#10;            &lt;ns0:wpCode&gt;91&lt;/ns0:wpCode&gt;&#13;&#10;            &lt;ns0:quantity&gt;1&lt;/ns0:quantity&gt;&#13;&#10;         &lt;/ns0:workPackage&gt;&#13;&#10;      &lt;/ns0:fufServiceInfo&gt;&#13;&#10;      &lt;ns0:localLoopType&gt;2&lt;/ns0:localLoopType&gt;&#13;&#10;      &lt;ns0:fibreCircuitState&gt;&#13;&#10;         &lt;ns0:firstInhouse&gt;false&lt;/ns0:firstInhouse&gt;&#13;&#10;         &lt;ns0:fibreLinebusinessState&gt;50&lt;/ns0:fibreLinebusinessState&gt;&#13;&#10;         &lt;ns0:inHousePhysicalOwner&gt;400110&lt;/ns0:inHousePhysicalOwner&gt;&#13;&#10;         &lt;ns0:enforceSla&gt;false&lt;/ns0:enforceSla&gt;&#13;&#10;      &lt;/ns0:fibreCircuitState&gt;&#13;&#10;      &lt;ns0:startPeriod&gt;2016-12-22T15:41:59+01:00&lt;/ns0:startPeriod&gt;&#13;&#10;   &lt;/ns0:getAppointmentTimeSlotsFuf&gt;&#13;&#10;&lt;/ns0:multiplexAppointmentCalculate&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="37" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;aps:multiplexAppointmentCalculateResponse xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:aps=&quot;aps.mLogistics.appBooking.v2&quot;&gt;&#13;&#10;    &lt;aps:getAppointmentTimeSlotsFufResponse&gt;&#13;&#10;        &lt;aps:envelope&gt;&#13;&#10;            &lt;aps:appointmentScenario&gt;A&lt;/aps:appointmentScenario&gt;&#13;&#10;                {{APP_str1}}&#13;&#10;            &lt;aps:responseStatus&gt;&#13;&#10;                &lt;aps:code&gt;0&lt;/aps:code&gt;&#13;&#10;                &lt;aps:text&gt;Sucess&lt;/aps:text&gt;&#13;&#10;            &lt;/aps:responseStatus&gt;&#13;&#10;        &lt;/aps:envelope&gt;&#13;&#10;    &lt;/aps:getAppointmentTimeSlotsFufResponse&gt;&#13;&#10;&lt;/aps:multiplexAppointmentCalculateResponse&gt;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="22" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="21" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

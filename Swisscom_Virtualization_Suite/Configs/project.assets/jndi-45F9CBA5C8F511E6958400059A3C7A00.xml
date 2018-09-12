@@ -1,0 +1,15 @@
+<Asset Version="2"><AssetInfo type="javax.naming.Context" hashcode="-749566983"><Url>config://jndi-45F9CBA5C8F511E6958400059A3C7A00</Url>
+<Description></Description>
+</AssetInfo>
+<InitialContext>
+<Factory>org.jnp.interfaces.NamingContextFactory</Factory>
+<Url>tcp://stint1aipt1v.swissptt.ch:7622</Url>
+<UrlPackageprefixes>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</UrlPackageprefixes>
+<Username>emsuser</Username>
+<Password itko_enc="encrypted">l836792b4d48cad598d90cd9a8d046419bf9a98ab00ca146da9886fcbd922a4bf834821606a11c7d6ae9c</Password>
+</InitialContext>
+</Asset>

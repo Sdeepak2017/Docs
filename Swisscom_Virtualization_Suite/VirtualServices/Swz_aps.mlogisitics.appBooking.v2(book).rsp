@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Mon Feb 27 14:09:21 CET 2017 -->
+
+
+<Results name="Swz_aps.mlogisitics.appBooking.v2(book)">
+
+
+    <Result node="Prepare Request">
+      <content type="com.itko.lisa.http.html.HtmlResponseWrapper" charset="UTF-8"><![CDATA[e3tsaXNhLnZzZS5yZXF1ZXN0fX0=]]></content>
+    </Result>
+
+
+</Results>

@@ -1,0 +1,14 @@
+<Asset Version="2"><AssetInfo type="javax.jms.Destination" hashcode="-1761929960"><Url>config://dest-D61BF53CFA7611E6BAFD74F420524153</Url>
+<Name>SWISSCOM.OSI.APPOINTMENT.NOTIFICATIONS.QUEUE</Name>
+<Description></Description>
+</AssetInfo>
+<SessionQueue>
+<Name>scs.eai.sp.mlogistics.order.osiOperations.appointment.request</Name>
+<Session>
+<AssetInfo type="javax.jms.Session" hashcode="-1450721729"><Url>config://asset.sess-6D96C985C8F511E6958400059A3C7A00</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Session>
+</SessionQueue>
+</Asset>

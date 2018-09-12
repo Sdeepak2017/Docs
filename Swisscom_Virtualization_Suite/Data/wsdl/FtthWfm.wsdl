@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.logobject.ch/ns/eis/ftth" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FtthWfm" targetNamespace="http://www.logobject.ch/ns/eis/ftth">
+	<wsdl:types>
+		<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.logobject.ch/ns/eis/ftth">
+			<xsd:annotation>
+				<xsd:documentation>Describes type of the location
+LOV:
+primary_location (BEP)
+secondary_location (BSO)
+partner_location
+distribution_point
+				</xsd:documentation>
+			</xsd:annotation>
+			<xsd:element name="fioNew">
+				<xsd:annotation>
+					<xsd:documentation>Creationtime by source system</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="taskHeader" type="tns:TaskHeader"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="2" name="address" type="tns:Address"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="partner" type="tns:Partner"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="installation" type="tns:Installation"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="1" name="workPackage" type="tns:WorkPackage"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="oto" type="tns:OTO"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="fioNewResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="out" type="tns:ErrorStatus"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="fioUpdate">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="taskHeader" type="tns:TaskHeader">      </xsd:element>
+						<xsd:element maxOccurs="1" minOccurs="1" name="address" type="tns:Address"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="partner" type="tns:Partner"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="installation" type="tns:Installation"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="1" name="workPackage" type="tns:WorkPackage"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="oto" type="tns:OTO"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="fioUpdateResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="out" type="tns:ErrorStatus"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="fioCancel">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="fioId" type="xsd:string"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="koPaId" type="xsd:string">
+							<xsd:annotation>
+								<xsd:documentation>      		        ID from the operator (is equal operatorNumberInternal from object PartnerData)
+      		      
+								</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element maxOccurs="1" minOccurs="1" name="timestamp" type="xsd:dateTime">
+							<xsd:annotation>
+								<xsd:documentation>Creationtime by source system</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element maxOccurs="1" minOccurs="1" name="requestId" type="xsd:string"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="syncId" type="xsd:string">
+							<xsd:annotation>
+								<xsd:documentation>      		        orderCorrelationId. An ID that will stay the same for the lifetime of an order. The ID needs to
+      		        survive any timeshift or revision.
+      		      
+								</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string">
+							<xsd:annotation>
+								<xsd:documentation>      		        Sourcesystem-Id, Routing information for Tibco. This field has to be filled in by the source
+      		        system.
+      		      
+								</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element maxOccurs="1" minOccurs="0" name="comment" type="xsd:string"/>
+						<xsd:element maxOccurs="1" minOccurs="0" name="checkOnly" type="xsd:boolean">
+							<xsd:annotation>
+								<xsd:documentation>Default = false. When set to true, WFM application server will attempt a
+cancel, return the resulting status code/text pair and roll back
+the transaction.
+NB: There is no guarantee that a subsequent cancel will yield the same
+result.
+								</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="fioCancelResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="out" type="tns:ErrorStatus"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="updateInventoryNotification">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="wfmTaskId" type="xsd:string"/>
+						<xsd:element maxOccurs="1" minOccurs="1" name="status" type="xsd:int"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="updateInventoryNotificationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="out" type="tns:ErrorStatus"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="confirm_IH_SES">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="in" type="tns:IhSesResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="TaskHeader">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="fioId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="timestamp" type="xsd:dateTime">
+						<xsd:annotation>
+							<xsd:documentation>Creationtime by source system</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>      	                Sourcesystem-Id, Routing information for Tibco. This field has to be fill in by the source system.
+      	            
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="requestId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="priority" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appStart" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appEnd" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="customerWishDate" type="xsd:dateTime">
+						<xsd:annotation>
+							<xsd:documentation>Date, when the customer wishes the service</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="slaEnd" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="syncId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>orderCorrelationId. An ID that will stay the same for the
+lifetime of an order. The ID needs to survive any timeshift
+or revision.
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>      	                Global event ID, generated by Tibco Order Orchestration. Used in WFM for 2nd level support.
+      	            
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="srIntegrationId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="customerId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>SCN: Swisscom customer number; mandatory if Siebel orders FIO</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="koPaId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>ID from the operator (is equal operatorNumberInternal from object PartnerData).</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Address">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="type" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>      	                LOV: 0 = Landlord 1 = Facility Manager (Verwalter) 2 = Installation (mandatory) 3 = Care Taker (Hauswart) 4 = Contact
+      	                Customer (mandatory) 5 = KoPa 6 = FDA
+      	            
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="title" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="firstName" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>absent for business customer</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="lastName" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>Customer last name or company name for business customer.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="company" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="profession" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="street" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="streetNumberSuffix" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="locationDescription" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="poBox" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="zip" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="city" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="countryCode" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="language" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="phone" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="email" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comment" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="OTO">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="socketId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>contains the current BAKOM-conform socket label</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ErrorStatus">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="IhSesResponse">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="errorStatus" type="tns:TibcoErrorStatus">            </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="serviceSheet" type="tns:ServiceSheet"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ServiceSheet">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="purchaseOrderNumber" type="xsd:string">            </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="supplierNumber" type="xsd:string">            </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="region" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="lastCall" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="purchaseOrderLineNumber" type="xsd:string">            </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="sheetNumber" type="xsd:string"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="line" type="tns:ServiceLine"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ServiceLine">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="serviceCatalogItem" type="xsd:string">            </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="quantity" type="xsd:decimal"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="price" type="xsd:decimal"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="PurchaseOrderLine">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="lineNumber" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="shortDescription" type="xsd:string">            </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="amount" type="xsd:decimal"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="state" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="PurchaseOrder">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="poNumber" type="xsd:string">                </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="supplierId" type="xsd:int">                </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="validFrom" type="xsd:dateTime">                </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="validUntil" type="xsd:dateTime">                </xsd:element>
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="line" type="tns:PurchaseOrderLine">                </xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="notify_IH_PO">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="1" name="purchaseOrder" type="tns:PurchaseOrder"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="TibcoErrorStatus">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Installation">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="fioTypeCode" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fioTypeText" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="notice" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="firstInhouse" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="linkTestNeeded" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="linkTestPlugNr" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="WorkPackage">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int">                </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="quantity" type="xsd:int">                </xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="positionNo" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Partner">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="isp" type="tns:Isp">
+						<xsd:annotation>
+							<xsd:documentation>Object only mandatory if FDA-> SCS</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="cooperation" type="tns:Cooperation"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Isp">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ispNumber" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>ISP code</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="ispName" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>ISP name</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="Cooperation">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="operatorNumberInternal" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>Swisscom internal identification of the operator</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="operatorNumber" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>External identification of the operator (for external usage)</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="referenceId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>Reference number</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="1" name="name" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="shortDescription" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="fioNewRequest">
+		<wsdl:part name="parameters" element="tns:fioNew"/>
+	</wsdl:message>
+	<wsdl:message name="fioNewResponse">
+		<wsdl:part name="parameters" element="tns:fioNewResponse"/>
+	</wsdl:message>
+	<wsdl:message name="fioUpdateRequest">
+		<wsdl:part name="parameters" element="tns:fioUpdate"/>
+	</wsdl:message>
+	<wsdl:message name="fioUpdateResponse">
+		<wsdl:part name="parameters" element="tns:fioUpdateResponse"/>
+	</wsdl:message>
+	<wsdl:message name="fioCancelRequest">
+		<wsdl:part name="parameters" element="tns:fioCancel"/>
+	</wsdl:message>
+	<wsdl:message name="fioCancelResponse">
+		<wsdl:part name="parameters" element="tns:fioCancelResponse"/>
+	</wsdl:message>
+	<wsdl:message name="updateInventoryNotificationRequest">
+		<wsdl:part name="parameters" element="tns:updateInventoryNotification"/>
+	</wsdl:message>
+	<wsdl:message name="updateInventoryNotificationResponse">
+		<wsdl:part name="parameters" element="tns:updateInventoryNotificationResponse"/>
+	</wsdl:message>
+	<wsdl:message name="confirm_IH_SESRequest">
+		<wsdl:part name="parameters" element="tns:confirm_IH_SES"/>
+	</wsdl:message>
+	<wsdl:message name="confirm_IH_SESResponse">  </wsdl:message>
+	<wsdl:message name="notify_IH_PORequest">
+		<wsdl:part name="parameters" element="tns:notify_IH_PO"/>
+	</wsdl:message>
+	<wsdl:message name="notify_IH_POResponse">  </wsdl:message>
+	<wsdl:portType name="FtthWfm">
+		<wsdl:operation name="fioNew">
+			<wsdl:input message="tns:fioNewRequest"/>
+			<wsdl:output message="tns:fioNewResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="fioUpdate">
+			<wsdl:input message="tns:fioUpdateRequest"/>
+			<wsdl:output message="tns:fioUpdateResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="fioCancel">
+			<wsdl:input message="tns:fioCancelRequest"/>
+			<wsdl:output message="tns:fioCancelResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="updateInventoryNotification">
+			<wsdl:input message="tns:updateInventoryNotificationRequest"/>
+			<wsdl:output message="tns:updateInventoryNotificationResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="confirm_IH_SES">
+			<wsdl:input message="tns:confirm_IH_SESRequest"/>
+			<wsdl:output message="tns:confirm_IH_SESResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="notify_IH_PO">
+			<wsdl:input message="tns:notify_IH_PORequest"/>
+			<wsdl:output message="tns:notify_IH_POResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="FtthWfmSOAP" type="tns:FtthWfm">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="fioNew">
+			<soap:operation soapAction="http://www.logobject.ch/ns/eis/ftth/fioNew"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="fioUpdate">
+			<soap:operation soapAction="http://www.logobject.ch/ns/eis/ftth/fioUpdate"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="fioCancel">
+			<soap:operation soapAction="http://www.logobject.ch/ns/eis/ftth/fioCancel"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="updateInventoryNotification">
+			<soap:operation soapAction="http://www.logobject.ch/ns/eis/ftth/updateInventoryNotification"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="confirm_IH_SES">
+			<soap:operation soapAction="http://www.logobject.ch/ns/eis/ftth/confirm_IH_SES"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="notify_IH_PO">
+			<soap:operation soapAction="http://www.logobject.ch/ns/eis/ftth/notify_IH_PO"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="FtthWfm">
+		<wsdl:documentation>Author: Ortwin Glueck, LogObject AG
+Version: 4.4
+Specification: Spec_WFM-TIBCO_FTTH-Inhouse_FIO_Swisscom_v3.0.doc
+		</wsdl:documentation>
+		<wsdl:port name="FtthWfmSOAP" binding="tns:FtthWfmSOAP">
+			<soap:address location="http://sg2110p.corproot.net:8080/axis/cxf/ftthih"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

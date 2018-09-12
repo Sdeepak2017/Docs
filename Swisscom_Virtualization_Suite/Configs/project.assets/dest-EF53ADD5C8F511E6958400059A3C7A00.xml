@@ -1,0 +1,14 @@
+<Asset Version="2"><AssetInfo type="javax.jms.Destination" hashcode="1947534491"><Url>config://dest-EF53ADD5C8F511E6958400059A3C7A00</Url>
+<Name>testTopic</Name>
+<Description></Description>
+</AssetInfo>
+<SessionTopic>
+<Name>testTopic</Name>
+<Session>
+<AssetInfo type="javax.jms.Session" hashcode="-1450721729"><Url>config://asset.sess-6D96C985C8F511E6958400059A3C7A00</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Session>
+</SessionTopic>
+</Asset>

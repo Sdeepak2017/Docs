@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapmsg>
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tib="http://www.logobject.ch/ns/task/tibco">
+      <soapenv:Header />
+      <soapenv:Body>
+         <tib:osiNewResponse>
+            <errorStatus>
+               <errorCode>0</errorCode>
+               <errorText>Success</errorText>
+            </errorStatus>
+         </tib:osiNewResponse>
+      </soapenv:Body>
+   </soapenv:Envelope>
+</soapmsg>

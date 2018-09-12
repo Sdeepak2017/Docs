@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Thu Nov 16 08:04:20 GMT 2017 -->
+
+
+<Results name="tcAutoNotify">
+
+
+    <Result node="retrieve_Order_Details">
+      <content type="xstream" charset="UTF-8"><![CDATA[<boolean>true</boolean>]]></content>
+    </Result>
+
+
+</Results>

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Tue Feb 28 15:17:15 IST 2017 -->
+
+
+<Results name="TC1">
+
+
+    <Result node="Web Service multiplexAppointmentCalculate">
+      <content type="xstream" charset="UTF-8"><![CDATA[<com.itko.lisa.gui.XMLResultsCache>
+  <Sxml>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;soapenv:Body&gt;&lt;soapenv:Fault&gt;&lt;faultcode&gt;soapenv:Server.userException&lt;/faultcode&gt;&lt;faultstring&gt;org.apache.http.NoHttpResponseException: localhost:9000 failed to respond&lt;/faultstring&gt;&lt;detail&gt;&lt;ns1:stackTrace xmlns:ns1=&quot;http://xml.apache.org/axis/&quot;&gt;org.apache.http.NoHttpResponseException: localhost:9000 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)&#xd;
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)&#xd;
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)&#xd;
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)&#xd;
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)&#xd;
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)&#xd;
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)&#xd;
+	at com.itko.lisa.ws.axis.LisaHTTPSender.doInvoke(LisaHTTPSender.java:497)&#xd;
+	at com.itko.lisa.ws.axis.LisaHTTPSender.invoke(LisaHTTPSender.java:274)&#xd;
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)&#xd;
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)&#xd;
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)&#xd;
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)&#xd;
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2837)&#xd;
+	at org.apache.axis.client.Call.invoke(Call.java:2820)&#xd;
+	at com.itko.lisa.ws.nx.NxWSStep.executeCall(NxWSStep.java:383)&#xd;
+	at com.itko.lisa.ws.nx.NxWSStep.execute(NxWSStep.java:287)&#xd;
+	at com.itko.lisa.ws.nx.ui.NxWSStepEditor$6.run(NxWSStepEditor.java:599)&#xd;
+&lt;/ns1:stackTrace&gt;&lt;ns2:hostname xmlns:ns2=&quot;http://xml.apache.org/axis/&quot;&gt;INBASDLP00207&lt;/ns2:hostname&gt;&lt;/detail&gt;&lt;/soapenv:Fault&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</Sxml>
+  <attachments/>
+</com.itko.lisa.gui.XMLResultsCache>]]></content>
+    </Result>
+
+
+</Results>

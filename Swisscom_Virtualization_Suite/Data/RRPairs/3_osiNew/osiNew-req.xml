@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <soapenv:Body>
+    <osiNew xmlns="http://www.logobject.ch/ns/task/tibco">
+      <taskHeader xmlns="">
+        <osiId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</osiId>
+        <oeOrderId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</oeOrderId>
+        <requestId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</requestId>
+        <geId>018872650336633880983255287129{{random10Code}}</geId>
+        <sourceApplicationId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</sourceApplicationId>
+        <!--syncId is optional-->
+        <syncId>{{SYNCID}}</syncId>
+        <!--priority is optional-->
+        <priority>{{=[:priority:1]}}</priority>
+        <!--appId is optional-->
+        <appId>{{bookedAppointmentID}}</appId>
+        <!--appStartDate is optional-->
+        <appStartDate>{{STARTDATE}}</appStartDate>
+        <!--appEndDate is optional-->
+        <appEndDate>{{ENDDATE}}</appEndDate>
+        <!--customerWishDate is optional-->
+        <customerWishDate>{{STARTDATE}}</customerWishDate>
+        <!--slaEndDate is optional-->
+        <slaEndDate>{{ENDDATE}}</slaEndDate>
+      </taskHeader>
+      <!--address must have at least 3 instances-->
+      <address xmlns="">
+        <type>{{=[:type:1]}}</type>
+        <!--title is optional-->
+        <title>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</title>
+        <!--firstName is optional-->
+        <firstName>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</firstName>
+        <!--lastName is optional-->
+        <lastName>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</lastName>
+        <!--profession is optional-->
+        <profession>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</profession>
+        <!--street is optional-->
+        <street>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</street>
+        <!--streetNumber is optional-->
+        <streetNumber>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</streetNumber>
+        <!--streetNumberSuffix is optional-->
+        <streetNumberSuffix>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</streetNumberSuffix>
+        <!--locationDescription is optional-->
+        <locationDescription>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</locationDescription>
+        <!--zip is optional-->
+        <zip>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,6}");}}</zip>
+        <!--city is optional-->
+        <city>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</city>
+        <!--language is optional-->
+        <language>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[a-z][a-z]{2,2}");}}</language>
+        <!--countrycode is optional-->
+        <countrycode>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Z][A-Z]{2,2}");}}</countrycode>
+        <!--phone is optional-->
+        <phone>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</phone>
+      </address>
+      <notificationData xmlns="">
+        <srIntegrationId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</srIntegrationId>
+        <customerId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</customerId>
+        <!--notificationNumber is optional-->
+        <notificationNumber>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</notificationNumber>
+        <!--email is optional-->
+        <email>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</email>
+        <language>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</language>
+      </notificationData>
+      <!--localLoop is optional-->
+      <localLoop xmlns="">
+        <type>{{=[:type:1]}}</type>
+        <!--localLoopId is optional-->
+        <localLoopId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</localLoopId>
+        <!--nsn is optional-->
+        <nsn>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</nsn>
+        <!--socketId is optional-->
+        <socketId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</socketId>
+        <!--plugNr is optional-->
+        <plugNr>{{=[:plugNr:1]}}</plugNr>
+      </localLoop>
+      <installation xmlns="">
+        <osiTypeCode>{{=[:osiTypeCode:1]}}</osiTypeCode>
+        <!--osiTypeText is optional-->
+        <osiTypeText>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</osiTypeText>
+        <!--notice is optional-->
+        <notice>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</notice>
+        <!--socketInstalled is optional-->
+        <socketInstalled>{{=[:socketInstalled:[1,0]]}}</socketInstalled>
+        <!--multiplug is optional-->
+        <multiplug>{{=[:multiplug:[1,0]]}}</multiplug>
+        <!--room is optional-->
+        <room>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</room>
+        <!--distanceTtToSocket is optional-->
+        <distanceTtToSocket>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</distanceTtToSocket>
+        <!--createdBy is optional-->
+        <createdBy>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</createdBy>
+        <!--serviceUserId is optional-->
+        <serviceUserId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</serviceUserId>
+        <!--customerSegment is optional-->
+        <customerSegment>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</customerSegment>
+        <triggeredBy>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</triggeredBy>
+      </installation>
+      <!--workPackage can have an unlimited number of instances-->
+      <workPackage xmlns="">
+        <workPackageCode>{{=[:workPackageCode:1]}}</workPackageCode>
+        <quantity>{{=[:quantity:1]}}</quantity>
+        <!--positionNumber is optional-->
+        <positionNumber>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</positionNumber>
+      </workPackage>
+      <!--material is optional, but can have an unlimited number of instances-->
+      <material xmlns="">
+        <matNr>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</matNr>
+        <quantity>{{=[:quantity:1]}}</quantity>
+        <!--matReservationId is optional-->
+        <matReservationId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</matReservationId>
+        <!--positionNumber is optional-->
+        <positionNumber>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</positionNumber>
+        <deliveryMode>{{=[:deliveryMode:1]}}</deliveryMode>
+      </material>
+      <!--productElement is optional, but can have an unlimited number of instances-->
+      <productElement xmlns="">
+        <productId>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</productId>
+        <productDescriptionEn>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</productDescriptionEn>
+        <!--netPrice is optional-->
+        <netPrice>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</netPrice>
+        <!--priceType is optional-->
+        <priceType>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</priceType>
+        <!--phoneNumber is optional-->
+        <phoneNumber>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</phoneNumber>
+        <!--accessSpeedMaxDown is optional-->
+        <accessSpeedMaxDown>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</accessSpeedMaxDown>
+        <!--accessSpeedMaxUp is optional-->
+        <accessSpeedMaxUp>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</accessSpeedMaxUp>
+        <!--accessSpeedMinDown is optional-->
+        <accessSpeedMinDown>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</accessSpeedMinDown>
+        <!--accessSpeedMinUp is optional-->
+        <accessSpeedMinUp>{{=%beanshell% com.ca.sv.devtest.util.GenerateString.forRegex("[A-Za-z0-9]{5,15}");}}</accessSpeedMinUp>
+      </productElement>
+    </osiNew>
+  </soapenv:Body>
+</soapenv:Envelope>

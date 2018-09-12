@@ -1,0 +1,19 @@
+<Asset Version="2"><AssetInfo type="javax.naming.Context" hashcode="-619173705"><Url>config://jndi-183E7D3BC8F511E6958400059A3C7A00</Url>
+<Name>ContextFactory</Name>
+<Description>desc</Description>
+</AssetInfo>
+<InitialContext>
+<Factory>org.jnp.interfaces.NamingContextFactory</Factory>
+<Url>jnp://localhost:1099</Url>
+<UrlPackageprefixes>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</UrlPackageprefixes>
+<Username>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</Username>
+</InitialContext>
+</Asset>

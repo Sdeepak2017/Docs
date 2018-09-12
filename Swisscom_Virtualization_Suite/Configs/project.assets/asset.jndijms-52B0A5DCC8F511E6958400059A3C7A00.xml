@@ -1,0 +1,13 @@
+<Asset Version="2"><AssetInfo type="javax.jms.ConnectionFactory" hashcode="-1814320742"><Url>config://asset.jndijms-52B0A5DCC8F511E6958400059A3C7A00</Url>
+<Description></Description>
+</AssetInfo>
+<JndiConnectionFactory>
+<Context>
+<AssetInfo type="javax.naming.Context" hashcode="-619173705"><Url>config://jndi-45F9CBA5C8F511E6958400059A3C7A00</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Context>
+<Name>ConnectionFactory</Name>
+</JndiConnectionFactory>
+</Asset>

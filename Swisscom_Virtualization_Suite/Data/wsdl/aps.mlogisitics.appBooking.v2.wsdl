@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="aps.mLogistics.appBooking.ws.v002" xmlns:wfm="aps.mLogistics.appBooking.v2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WfmAppBookingV002" targetNamespace="aps.mLogistics.appBooking.ws.v002">
+	<wsdl:documentation>This Web Service represents the interface for the Appointment Booking in WFM.</wsdl:documentation>
+	<wsdl:types>
+		<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="aps.mLogistics.appBooking.v2" xmlns="aps.mLogistics.appBooking.v2">
+			<!-- MULTIPLEXER OPERATION REQUEST/RESPONSE ELEMENTS -->
+			<xsd:element name="multiplexAppointmentCalculate" type="multiplexAppointmentCalculateType"/>
+			<xsd:complexType name="multiplexAppointmentCalculateType">
+				<xsd:choice>
+					<xsd:element name="getAppointmentTimeSlotsAsr" type="getAppointmentTimeSlotsAsrType"/>
+					<xsd:element name="getAppointmentTimeSlotsFuf" type="getAppointmentTimeSlotsFufType"/>
+					<xsd:element name="rescheduleAppointment" type="rescheduleAppointmentType"/>
+					<xsd:element name="getSzf" type="getSzfType"/>
+				</xsd:choice>
+			</xsd:complexType>
+			<xsd:element name="multiplexAppointmentCalculateResponse" type="multiplexAppointmentCalculateResponseType"/>
+			<xsd:complexType name="multiplexAppointmentCalculateResponseType">
+				<xsd:choice>
+					<xsd:element name="getAppointmentTimeSlotsAsrResponse" type="getAppointmentTimeSlotsAsrResponseType"/>
+					<xsd:element name="getAppointmentTimeSlotsFufResponse" type="getAppointmentTimeSlotsFufResponseType"/>
+					<xsd:element name="rescheduleAppointmentResponse" type="rescheduleAppointmentResponseType"/>
+					<xsd:element name="getSzfResponse" type="getSzfResponseType"/>
+				</xsd:choice>
+			</xsd:complexType>
+			<xsd:element name="getAppointmentTimeSlotsAsr" type="getAppointmentTimeSlotsAsrType"/>
+			<xsd:element name="getAppointmentTimeSlotsFuf" type="getAppointmentTimeSlotsFufType"/>
+			<xsd:element name="rescheduleAppointment" type="rescheduleAppointmentType"/>
+			<xsd:element name="getSzf" type="getSzfType"/>
+			<xsd:element name="getAppointmentTimeSlotsAsrResponse" type="getAppointmentTimeSlotsAsrResponseType"/>
+			<xsd:element name="getAppointmentTimeSlotsFufResponse" type="getAppointmentTimeSlotsFufResponseType"/>
+			<xsd:element name="rescheduleAppointmentResponse" type="rescheduleAppointmentResponseType"/>
+			<xsd:element name="getSzfResponse" type="getSzfResponseType"/>
+			<xsd:complexType name="getAppointmentTimeSlotsAsrType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="sourceApplicationChannel" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="customerLocation" type="customerLocationType"/>
+					<xsd:element minOccurs="0" name="networkLocation" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="asrServiceInfo" type="asrServiceInfoType"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="timeSlotType" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="startPeriod" type="xsd:dateTime"/>
+					<xsd:element minOccurs="0" name="endPeriod" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="targetRestoreTime" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="slaType" type="xsd:int"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="getAppointmentTimeSlotsAsrResponseType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="envelope" type="getAppointmentTimeSlotsAsrResponseTypeEnvelope">
+						<xsd:annotation>
+							<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="getAppointmentTimeSlotsAsrResponseTypeEnvelope">
+				<xsd:annotation>
+					<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="singleAppointment" type="singleAppointmentType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="responseStatus" type="responseStatusType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<!-- GET APPOINTMENT TIME SLOTS FOR FULFILLMENT REQUEST/RESPONSE ELEMENTS -->
+			<xsd:complexType name="getAppointmentTimeSlotsFufType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="sourceApplicationChannel" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="syncId" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="customerLocation" type="customerLocationType"/>
+					<xsd:element minOccurs="0" name="networkLocation" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="fulfillmentStrategyLevel" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="slotClass" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="szfQualification" type="xsd:int"/>
+					<xsd:element maxOccurs="unbounded" name="fufServiceInfo" type="fufServiceInfoType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="localLoopType" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="fibreCircuitState" type="fibreCircuitStateType"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="timeSlotType" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="startPeriod" type="xsd:dateTime"/>
+					<xsd:element minOccurs="0" name="endPeriod" type="xsd:dateTime"/>
+					<xsd:element minOccurs="0" name="wishedActivationDate" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="getAppointmentTimeSlotsFufResponseType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="envelope" type="getAppointmentTimeSlotsFufResponseTypeEnvelope">
+						<xsd:annotation>
+							<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="getAppointmentTimeSlotsFufResponseTypeEnvelope">
+				<xsd:annotation>
+					<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element minOccurs="0" name="appointmentScenario" type="xsd:string"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="combinedAppointment" type="combinedAppointmentType"/>
+					<xsd:element name="responseStatus" type="responseStatusType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<!-- BOOK APPOINTMENT REQUEST/RESPONSE ELEMENTS -->
+			<xsd:element name="bookAppointment" type="bookAppointmentType"/>
+			<xsd:complexType name="bookAppointmentType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="sourceApplicationChannel" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="syncId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="selectedSlot" type="selectedAppointmentType"/>
+					<xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="bookAppointmentResponse" type="bookAppointmentResponseType"/>
+			<xsd:complexType name="bookAppointmentResponseType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="envelope" type="bookAppointmentResponseTypeEnvelope"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="bookAppointmentResponseTypeEnvelope">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="appointment" type="appointmentType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="responseStatus" type="responseStatusType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<!-- RESCHEDULE APPOINTMENT REQUEST/RESPONSE ELEMENTS -->
+			<xsd:complexType name="rescheduleAppointmentType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="sourceApplicationChannel" type="xsd:string"/>
+					<!-- NOTE: Occurence is optional because of ASR appointments. Must be specified in case of shifting fulfillment 
+            appointments. -->
+					<xsd:element maxOccurs="1" minOccurs="0" name="asrAppointmentId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="syncId" type="xsd:string"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="fufServiceInfo" type="fufServiceInfoType"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="timeSlotType" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="startPeriod" type="xsd:dateTime"/>
+					<xsd:element minOccurs="0" name="endPeriod" type="xsd:dateTime"/>
+					<xsd:element minOccurs="0" name="wishedActivationDate" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="targetRestoreTime" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="rescheduleAppointmentResponseType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="envelope" type="rescheduleAppointmentResponseTypeEnvelope">
+						<xsd:annotation>
+							<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="rescheduleAppointmentResponseTypeEnvelope">
+				<xsd:annotation>
+					<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="combinedAppointment" type="combinedAppointmentType"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="singleAppointment" type="singleAppointmentType"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="responseStatus" type="responseStatusType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<!-- CANCEL APPOINTMENT REQUEST/RESPONSE ELEMENTS -->
+			<xsd:element name="cancelAppointment" type="cancelAppointmentType">
+				<xsd:annotation>
+					<xsd:documentation>The one and only element in the operation request cancelAppointment().</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:complexType name="cancelAppointmentType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="sourceApplicationChannel" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="appointmentId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="reason" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="cancelAppointmentResponse" type="cancelAppointmentResponseType">
+				<xsd:annotation>
+					<xsd:documentation>The one and only element in the operation response cancelAppointment().</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:complexType name="cancelAppointmentResponseType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="envelope" type="cancelAppointmentResponseTypeEnvelope">
+						<xsd:annotation>
+							<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="cancelAppointmentResponseTypeEnvelope">
+				<xsd:annotation>
+					<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="responseStatus" type="responseStatusType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="getSzfType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="geId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="sourceApplicationId" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="sourceApplicationChannel" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="localLoopType" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="slotClass" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="szfQualification" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="networkLocation" type="xsd:string"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="timeSlotType" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="wishDate" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="getSzfResponseType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="envelope" type="getSzfResponseTypeEnvelope">
+						<xsd:annotation>
+							<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="getSzfResponseTypeEnvelope">
+				<xsd:annotation>
+					<xsd:documentation>Additional wrapping because of WFM SOAP engine.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="singleAppointment" type="singleAppointmentType"/>
+					<xsd:element name="responseStatus" type="responseStatusType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="appointmentType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="id" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="businessLine" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="serviceType" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="expirationDateTime" type="xsd:dateTime"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="asrServiceInfoType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="tier1" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="tier2" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="tier3" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="tier4" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="combinedAppointmentType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="id" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="rank1" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="rank2" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="downTime" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="plannedLineActivationDateTime" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="current" type="xsd:boolean"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="serviceTimeSlot" type="serviceTimeSlotType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="customerLocationType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="zip" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="city" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="country" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="gaiaId" type="xsd:int"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="fibreCircuitStateType">
+				<xsd:sequence>
+					<xsd:element minOccurs="0" name="firstInhouse" type="xsd:boolean"/>
+					<xsd:element minOccurs="0" name="fibreLinebusinessState" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="inHousePhysicalOwner" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="enforceSla" type="xsd:boolean"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="fufServiceInfoType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="appointmentId" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="shift" type="xsd:boolean"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="businessLine" type="xsd:int"/>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="workPackage" type="workPackageType"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="responseStatusType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="code" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="text" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="selectedAppointmentType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="id" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="outOfSla" type="xsd:boolean"/>
+					<xsd:element minOccurs="0" name="outOfSlaReason" type="xsd:int"/>
+					<xsd:element minOccurs="0" name="externalNotificationId" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="serviceTimeSlotType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="serviceType" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="start" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="end" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="duration" type="xsd:int"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="singleAppointmentType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="id" type="xsd:string"/>
+					<xsd:element minOccurs="0" name="rank" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="start" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="end" type="xsd:dateTime"/>
+					<xsd:element minOccurs="0" name="timeSlotType" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="outOfSla" type="xsd:boolean"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="workPackageType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="1" name="wpCode" type="xsd:int"/>
+					<xsd:element maxOccurs="1" minOccurs="1" name="quantity" type="xsd:int"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getAppointmentTimeSlotsAsrRequest">
+		<wsdl:part name="parameters" element="wfm:getAppointmentTimeSlotsAsr"/>
+	</wsdl:message>
+	<wsdl:message name="getAppointmentTimeSlotsAsrResponse">
+		<wsdl:part name="parameters" element="wfm:getAppointmentTimeSlotsAsrResponse"/>
+	</wsdl:message>
+	<wsdl:message name="getAppointmentTimeSlotsFufRequest">
+		<wsdl:part name="parameters" element="wfm:getAppointmentTimeSlotsFuf"/>
+	</wsdl:message>
+	<wsdl:message name="getAppointmentTimeSlotsFufResponse">
+		<wsdl:part name="parameters" element="wfm:getAppointmentTimeSlotsFufResponse"/>
+	</wsdl:message>
+	<wsdl:message name="bookAppointmentRequest">
+		<wsdl:part name="parameters" element="wfm:bookAppointment"/>
+	</wsdl:message>
+	<wsdl:message name="bookAppointmentResponse">
+		<wsdl:part name="parameters" element="wfm:bookAppointmentResponse"/>
+	</wsdl:message>
+	<wsdl:message name="rescheduleAppointmentRequest">
+		<wsdl:part name="parameters" element="wfm:rescheduleAppointment"/>
+	</wsdl:message>
+	<wsdl:message name="rescheduleAppointmentResponse">
+		<wsdl:part name="parameters" element="wfm:rescheduleAppointmentResponse"/>
+	</wsdl:message>
+	<wsdl:message name="cancelAppointmentRequest">
+		<wsdl:part name="parameters" element="wfm:cancelAppointment"/>
+	</wsdl:message>
+	<wsdl:message name="cancelAppointmentResponse">
+		<wsdl:part name="parameters" element="wfm:cancelAppointmentResponse"/>
+	</wsdl:message>
+	<wsdl:message name="getSzfRequest">
+		<wsdl:part name="parameters" element="wfm:getSzf"/>
+	</wsdl:message>
+	<wsdl:message name="getSzfResponse">
+		<wsdl:part name="parameters" element="wfm:getSzfResponse"/>
+	</wsdl:message>
+	<wsdl:message name="multiplexAppointmentCalculateRequest">
+		<wsdl:part name="parameters" element="wfm:multiplexAppointmentCalculate"/>
+	</wsdl:message>
+	<wsdl:message name="multiplexAppointmentCalculateResponse">
+		<wsdl:part name="parameters" element="wfm:multiplexAppointmentCalculateResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="WfmAppBooking">
+		<wsdl:operation name="getAppointmentTimeSlotsAsr">
+			<wsdl:documentation>This operation returns the available time slots for an assurance appointment.
+      
+			</wsdl:documentation>
+			<wsdl:input message="tns:getAppointmentTimeSlotsAsrRequest"/>
+			<wsdl:output message="tns:getAppointmentTimeSlotsAsrResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="getAppointmentTimeSlotsFuf">
+			<wsdl:documentation>This operation returns the available time slots for a fulfillment appointment.
+      
+			</wsdl:documentation>
+			<wsdl:input message="tns:getAppointmentTimeSlotsFufRequest"/>
+			<wsdl:output message="tns:getAppointmentTimeSlotsFufResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="bookAppointment">
+			<wsdl:documentation>This operation creates an appointment.</wsdl:documentation>
+			<wsdl:input message="tns:bookAppointmentRequest"/>
+			<wsdl:output message="tns:bookAppointmentResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="rescheduleAppointment">
+			<wsdl:documentation>This operation modifies an existing appointment (reschedule).</wsdl:documentation>
+			<wsdl:input message="tns:rescheduleAppointmentRequest"/>
+			<wsdl:output message="tns:rescheduleAppointmentResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="cancelAppointment">
+			<wsdl:documentation>This operation cancels an existing appointment.</wsdl:documentation>
+			<wsdl:input message="tns:cancelAppointmentRequest"/>
+			<wsdl:output message="tns:cancelAppointmentResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="getSzf">
+			<wsdl:documentation>This operation retrieves the planned Schalt Zeit Fenster (SZF) for a given network location.
+      
+			</wsdl:documentation>
+			<wsdl:input message="tns:getSzfRequest"/>
+			<wsdl:output message="tns:getSzfResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="multiplexAppointmentCalculate">
+			<wsdl:documentation>This operation is to retrieve time slots for various scenarios..</wsdl:documentation>
+			<wsdl:input message="tns:multiplexAppointmentCalculateRequest"/>
+			<wsdl:output message="tns:multiplexAppointmentCalculateResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="WfmAppBookingSoapBinding" type="tns:WfmAppBooking">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getAppointmentTimeSlotsAsr">
+			<soap:operation soapAction="https://localhost:8080/wfm/services/WfmAppBookingV002/getAppointmentTimeslotsAsr"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getAppointmentTimeSlotsFuf">
+			<soap:operation soapAction="https://localhost:8080/wfm/services/WfmAppBookingV002/getAppointmentTimeslotsFuf"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="bookAppointment">
+			<soap:operation soapAction="https://localhost:8080/wfm/services/WfmAppBookingV002/bookAppointment"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="rescheduleAppointment">
+			<soap:operation soapAction="https://localhost:8080/wfm/services/WfmAppBookingV002/rescheduleAppointment"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="cancelAppointment">
+			<soap:operation soapAction="https://localhost:8080/wfm/services/WfmAppBookingV002/cancelAppointment"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getSzf">
+			<soap:operation soapAction="https://localhost:8080/wfm/services/WfmAppBookingV002/getSzf"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="multiplexAppointmentCalculate">
+			<soap:operation soapAction="https://localhost:8080/wfm/services/WfmAppBookingV002/multiplexAppointmentCalculate"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="WfmAppBookingService">
+		<wsdl:documentation>Version: 7.0
+Author: Ortwin Glueck, LogObject AG
+Spec: WFM_APRS_v1_6-2.pdf
+		</wsdl:documentation>
+		<wsdl:port name="WfmAppBookingV002" binding="tns:WfmAppBookingSoapBinding">
+			<soap:address location="https://localhost:8080/wfm/services/WfmAppBookingV002"/>
+		</wsdl:port>
+	</wsdl:service>
+	<!-- MESSAGES -->
+	<!-- OPERATIONS AND MESSAGES -->
+	<!-- BINDING AND OPERATIONS -->
+	<!-- SERVICE -->
+</wsdl:definitions>
